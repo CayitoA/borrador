@@ -1,0 +1,803 @@
+*
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+ html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: yellow;
+}
+
+.flexone{flex: 1;}
+
+
+#presentacion{
+    background-image: url(../img/fondo-presentacion.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+#presentacion .logo{
+    background-image: url(../img/logo-blanco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 60px;
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    align-content: center;}
+
+#presentacion .contenedor-texto{
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:none;
+    }
+
+    #presentacion  .contenedor-frase{
+        width: 600px;
+        min-width: 380px;
+        padding: 10px 30px;
+        margin-top: 30px;
+        background-color: none;
+        margin-bottom: 1px;
+    }
+    #presentacion  .contenedor-frase p{
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 3rem;
+        color:white;
+        margin-top: 20px;
+        text-shadow:  2px 2px  #190d05;
+        text-shadow: 2px 2px 2px #555658;
+    }
+
+    #presentacion .btncontacto{
+        padding: 8px 40px;
+        background-color: #0833a2;
+       background-color:  #0000ad;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: none;
+        transition: all 0.3s;
+    }
+
+    #presentacion .btncontacto:hover{
+        background-color: #1E88E5;
+    }
+    #presentacion .btncontacto a{
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #presentacion .centrar{
+    display: flex;
+    justify-content: center;
+}
+
+/* servicios*/
+#servicios{
+    background-color: #f5f5f7;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+#servicios .contenedor-titulo{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 25px;
+    background-color: #f5f5f7;
+    padding-top: 40px;
+
+}
+
+#servicios .contenedor-titulo h2{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #272727;
+    padding: 0 12px;
+    }
+    #servicios .contenedor-card{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+        background-color: #101923;
+
+        background-color: #f5f5f7;
+    }
+       
+
+        #servicios  .cardservicios .contenedorbtn {
+        display: flex;
+        flex-direction: column;
+        }
+
+
+   
+           
+   #servicios   .cardservicios   span{ 
+    background-color: #cbcdcc;
+    background-color: #e3e4e5;
+    padding: 5px 15px;
+    border-radius: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;    
+       }
+    
+
+
+
+        #servicios  .cardservicios  .btn {
+        background-color: transparent;    
+        border: 2px solid white;
+        margin-top: 15px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: white;   
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       align-content: center;
+       
+        }
+
+       
+
+        #servicios  .cardservicios  .btn:hover {
+        background-color: white;    
+        margin-top: 10px;
+        border-radius: 8px;
+        color: black;
+        }
+        
+      
+
+
+
+#servicios .contenedor-card .cardservicios .foto1:hover, .foto2:hover{
+scale: 105%;
+transition: 500ms;}
+
+
+
+/* detalle servicios asesorias */
+
+
+
+
+.groups .cardservicios{overflow: hidden;display: block; width: 900px;; background-color: #e3edf2;
+     border-radius: 15px;
+     background-color: #101923;
+     margin-bottom: 30px;
+    }
+
+
+.groups .cardservicios .foto1 {
+background-image: url(../img/istockphoto-1600879970-1024x1024.jpg);}
+.groups .cardservicios .foto2 {
+background-image: url(../img/istockphoto-1390642489-1024x1024.jpg);}
+.groups .cardservicios .foto3 {
+    background-image: url(../img/istockphoto-992867836-1024x1024.jpg);}
+.groups .cardservicios .foto4 {
+        background-image: url(../img/istockphoto-1614965646-1024x1024.jpg);}
+        
+#card1 .groups .foto1{
+background-image: url(../img/istockphoto-1579615876-1024x1024\ \(1\).jpg);
+        }
+        
+#card2 .groups .foto2{
+background-image: url(../img/istockphoto-1579615861-1024x1024.jpg);
+        }
+                
+.cardservicios .tituloservicios1  {
+     font-size: 3rem;
+     font-weight: 500;
+     padding: 15px 0;
+     color: white;
+ }
+ .cardservicios .tituloservicios  {
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding: 15px 0;
+    color: white;
+}
+.cardservicios .detalle  {
+    font-size: 1.4rem;
+    color: #f5f5f7;
+}
+.groups .image-session1{float: left;overflow: hidden;margin-right: 20px;}
+.groups .image-session1 .image{width: 350px; min-width: 330px; height: 32rem;display: block;
+    background-size: cover; background-position: center; background-repeat: no-repeat;}
+.groups .meta-sission1{position: relative;padding: 15px;display: block;height: 32rem;}
+
+
+
+.cardservicios .meta-sission1  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cardservicios .body1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+}
+.groups .cardservicios .flecha{
+    padding-left: 10px;
+}
+
+#collapseExample1  {
+    margin: 0 auto;
+}
+#collapseExample2  {
+    margin: 0 auto;
+}
+#collapseExample3  {
+    margin: 0 auto;
+}
+#collapseExample4  {
+    margin: 0 auto;
+}
+#card1  {
+    margin: 0 auto;
+}
+#card2  {
+    margin: 0 auto;
+}
+/* proyectos*/
+#proyectos{
+    background-color:#e9e9e9;
+    background-color: #f6f6f4;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+#proyectos .contenedor-titulo{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding:0 20px;
+    background-color: #f6f6f4;
+    padding-top: 40px;
+
+}
+
+#proyectos .contenedor-titulo h2{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #272727;
+    padding: 0 12px;
+    }
+    #proyectos .contenedor-card{
+        margin: 0 auto;
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f6f6f4;
+        }
+        
+        #proyectos  .card{
+        margin: 0 auto;
+        width: 270px;
+        max-width: 280px;
+        padding: 0;
+        background-color: white;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        #proyectos  .card .contenedorbtn {
+        display: flex;
+        flex-direction: column;
+        }
+        #proyectos  .card .contenedorbtn .btn {
+        background-color: #e3edf2;    
+        margin-top: 10px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #190d05;   
+        }
+
+        #proyectos  .card h3{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #190d05;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        }
+
+        #proyectos  .card .contenedorbtn .btn:hover {
+        background-color: #190d05;    
+        margin-top: 10px;
+        border-radius: 8px;
+        color: white;
+        }
+        
+
+
+        #proyectos  .card .contenedor-texto{
+        padding: 10px 20px;
+               
+            }
+
+#proyectos .contenedor-card .card .foto1{
+    background-image: url(../img/istockphoto-1579615876-1024x1024\ \(1\).jpg);
+}
+
+#servicios .contenedor-card .card .foto2{
+    background-image: url(../img/istockphoto-1579615861-1024x1024.jpg);
+}
+
+#proyectos .contenedor-card .card .foto1:hover, .foto2:hover{
+scale: 105%;
+transition: 500ms;}
+
+#proyectos .contenedor-card .card .imagen
+{width: 96%;  height: 28rem;display: block;background-size: cover;
+    background-position: center; background-repeat: no-repeat; border-radius: 8px;
+margin: 0 auto;
+margin-top: 7px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* quienes somos*/
+#quienessomos{
+    background-color: #f6f6f4;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+#quienessomos .contenedor-titulo{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 20px;
+    background-color: #f6f6f4;
+    padding-top: 40px;
+
+    }
+#quienessomos .contenedor-titulo :hover{
+    color: #003366;
+    }
+#quienessomos .contenedor-titulo h2{
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #272727;
+    padding: 0 12px;
+    }
+    
+
+/* seccion azul */
+
+.carruselazul{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 30px;
+    margin-top: 30px;
+}
+
+#carouselExampleInterval {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    height: 100%;
+    background: linear-gradient(to bottom right,#e3edf2, #c5e0fb);    min-width: 380px;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px 0 #0005;
+}
+#carouselExampleInterval .carousel-inner{
+    width: 80%;
+}
+#carouselExampleInterval h4{
+    color: #190d05;
+    text-align: left;
+    padding: 30px 20px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+
+
+/* como funciona*/
+
+#comofunciona{
+    background-color: #fefffa;
+    background-color: #190d05;
+}
+
+#comofunciona .contenedor-titulo{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 20px;
+    background-color: none ;
+    padding-top: 40px;
+
+    }
+
+#comofunciona .contenedor-titulo h2{
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #272727;
+    padding: 0 12px;
+    color: #c5e0fb;
+    }
+
+#comofunciona .contenedor-texto{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: none;
+    }
+
+    #comofunciona  .contenedor-frase{
+        margin: 0 auto;
+        width: 650px;
+        max-width: 650px;
+        padding: 20px 20px;
+        background-color: #f6f6f4;
+        border-radius: 12px;
+        transition: all 0.3s;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        box-shadow: 0 3px 4px 0 #0001
+
+    }
+
+    #comofunciona .contenedor-frase:hover  {
+        scale: 105%;
+        transition: 400ms;
+        scale:(1.04);box-shadow: 0 4px 14px 0 #0005;
+    }
+
+
+    #comofunciona  .contenedor-texto p{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #190d05;
+        text-indent: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #comofunciona  .contenedor-texto p:hover{
+        font-size: 16px;
+        color: #190d05;
+        font-weight: 600;
+    }
+
+/* forma de trabajo*/
+
+    #formatrabajo{
+    background-color: whitesmoke;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    #formatrabajo .contenedor-titulo{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 20px;
+    background-color: #f6f6f4;
+    padding-top: 40px;
+    
+    }
+    
+    #formatrabajo .contenedor-titulo h2{
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #272727;
+    padding: 0 12px;
+    }
+        
+    #formatrabajo .contenedor-card{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: top;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f6f6f4;
+    }
+    
+    #formatrabajo  .card{
+    margin: 0 auto;
+    width: 260px;
+    max-width: 290px;
+    padding: 20px ;
+    background-color: #e9eae4;
+    background-color: white;
+    
+    border-radius: 12px;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 4px 0 #0001
+
+    }
+    #formatrabajo  .card h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #190d05;
+    padding-top: 20px;
+    }
+    #formatrabajo  .card h3:hover{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #190d05;
+        }
+
+
+    #formatrabajo .contenedor-card .c1:hover {
+        transition: 400ms;
+        scale:(1.04);
+        box-shadow: 0 4px 14px 0 #0005;
+        background-color: #f5f5f7;
+    }
+        
+    #formatrabajo .contenedor-card .c2:hover   {
+        transition: 400ms; scale:(1.04); box-shadow: 0 4px 14px 0 #0005;background-color: #f5f5f7;
+    }
+    #formatrabajo .contenedor-card .c3:hover   {
+        transition: 400ms; scale:(1.04); box-shadow: 0 4px 14px 0 #0005; background-color: #f5f5f7;
+    }
+    #formatrabajo .contenedor-card .c4:hover   {
+        transition: 400ms; scale:(1.04); box-shadow: 0 4px 14px 0 #0005;background-color: #f5f5f7;
+    } 
+    #formatrabajo .contenedor-card .c5:hover   {
+        transition: 400ms; scale:(1.04); box-shadow: 0 4px 14px 0 #0005;background-color: #f5f5f7;
+    } 
+    #formatrabajo .contenedor-card .c6:hover   {
+        transition: 400ms; scale:(1.04); box-shadow: 0 4px 14px 0 #0005;background-color: #f5f5f7;
+    }
+   #formatrabajo .card .botonmas{
+    text-align-last: right;
+
+    vertical-align: bottom;
+    margin-bottom: 0;
+    }
+
+    #formatrabajo  .card .spam { 
+    background-color: #190d05;  
+    padding: 6px;
+    border-radius: 50% ;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;    
+    }
+
+    #exampleModalLabel{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #190d05;
+    padding-top: 10px;
+    color: white;
+    }
+    
+    .modal-header{
+    background-color: #003366;
+    }
+
+    .modal-body { 
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #190d05;
+    text-indent: 1rem;
+    line-height: 2rem;
+    padding-top: 20px;
+    padding: 50px;
+    margin: 20px 10px;
+}
+
+
+
+
+
+
+
+
+.fondo{
+   background-color:  #003366 ;
+    padding: 100px 30px;
+}
+
+
+
+
+
+@media screen and (max-width:550px){ #presentacion .contenedor-frase {   
+max-width: 90%;
+align-items: center;  
+height: auto; text-align: center;}    
+}
+  
+
+@media screen and (max-width:550px){ #servicios .contenedor-card  .cardservicios {   
+width: 90%;  align-items: center;
+     }    
+}
+
+
+
+
+
+
+    
+    @media screen and (max-width:550px){ #proyectos .contenedor-card   {   
+        width: 100%;    align-items: center;
+        
+             }    
+        }
+       
+     
+      
+
+
+
+
+@media screen and (max-width:550px){ #servicios .contenedor-titulo   {   
+    width: 100%;   }    
+}
+@media screen and (max-width:550px){ #proyectos .contenedor-titulo   {   
+    width: 100%;   }    
+}
+
+@media screen and (max-width:550px){ #quienessomos .contenedor-titulo   {   
+    width: 100%;   }    
+}
+
+@media screen and (max-width:550px){ #comofunciona .contenedor-titulo   {   
+    width: 100%;   }    
+}
+
+
+        @media screen and (max-width:550px){ #collapseExample1 .cardservicios {   
+            width: 90%;   
+            align-items: center;   }    
+                        }
+        @media screen and (max-width:550px){ #collapseExample2 .cardservicios {   
+            width: 90%;   
+            align-items: center;   }    
+                                }
+        @media screen and (max-width:550px){ #collapseExample3 .cardservicios {   
+            width: 90%;   
+            align-items: center;   }    
+                                    }
+        @media screen and (max-width:550px){ #collapseExample4 .cardservicios {   
+            width: 90%;   
+            align-items: center;   }    
+                     }
+                        
+       
+
+     @media screen and (max-width:550px){ #collapseExample2 .cardservicios .meta-sission1 {   
+                            height: auto; 
+                     }    
+                                }
+                
+        
+        @media screen and (max-width:550px){ .cardservicios .meta-sission1  {   
+        height: auto;     }    
+                                    }
+
+
+
+
+        @media screen and (max-width:550px){.carruselazul{ width: 96%; padding: 5px; height: auto;}    
+    }
+
+
+    @media screen and (max-width:550px){ #comofunciona .contenedor-titulo, .contenedor-texto  {   
+    max-width: 90%;
+    align-items: center;  
+    }    
+    }
+
+    @media screen and (max-width:550px){ #formatrabajo .contenedor-titulo, .contenedor-texto  {   
+    max-width: 90%;
+    align-items: center;  
+    }    
+    }  
+
+    @media screen and (max-width:550px){ #formatrabajo .contenedor-card  {   
+    max-width: 100% ;
+    align-items: center; 
+    }    
+    }
+
+    @media screen and (max-width:550px){ #formatrabajo .card  {   
+    max-width: 45% ;
+    align-items: right;  height: 22rem;
+    }    
+    }
+
