@@ -28,6 +28,7 @@ body{
     width: 100%;
     margin: 0 auto;
     background-color: #333333;
+
 }
 .logo{
     width: 20%;
@@ -74,7 +75,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 430px;
+    height: 45rem;
     display: flex;
     align-items: center;
 }
@@ -931,7 +932,7 @@ align-items: center;
 @media screen and (max-width:550px){ #presentacion .contenedor-texto {   
     max-width: 90%;
     align-items: center;  
-    height: auto; text-align: center;}    
+    height: auto; text-align: center;   }    
     }
 
 
@@ -939,7 +940,7 @@ align-items: center;
 @media screen and (max-width:550px){ #presentacion .contenedor-frase {   
 max-width: 85%;
 align-items: center;  
-height: auto; text-align: center;}    
+height: auto; text-align: center; padding: 20px 0; }    
 }
   
 
