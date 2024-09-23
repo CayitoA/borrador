@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AMTEK Manufacturing Resolved</title>
+    <meta name="theme-color" content="#190d05">
 
 <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -20,6 +21,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/94c1e46ce4.js" crossorigin="anonymous"></script>
@@ -28,6 +34,62 @@
 </head>
 <body>
     
+   
+<!-- inicio navbar -->
+<nav id="barranavegacion" class="navbar fixed-top  navbar-expand-md navbar-dark"  >
+    
+  <div id="menu" class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#">
+              <img src="assets/img/icono-navbar.svg" alt="" width="auto" height="25px">
+            </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+<div class="collapse navbar-collapse " id="menu" >
+
+  <ul class="navbar-nav ms-auto categorias">
+
+      <li class="nav-item">
+      <a class="nav-link active" href="#presentacion">Inicio</a></li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" 
+          data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#card1">Producción de piezas</a></li>
+            <li><a class="dropdown-item" href="#card2">Consultorías</a></li>
+          </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="#proyectos">Proyectos</a></li>
+
+      <li class="nav-item">
+      <a class="nav-link active" href="#quienessomos">Quienes somos</a></li>
+
+      <li class="nav-item">
+          <a class="nav-link active" href="#comofunciona">Como funciona</a></li>
+
+      <li class="nav-item">
+      <a class="nav-link active" href="#formulario" target="_blank" >Contacto</a></li>
+    
+      
+  </ul>
+
+</div>
+
+  </div>
+
+</nav>
+<!-- fin navbar-->
+
+
+
     <main>
 
 <!--presentacion-->
@@ -39,7 +101,7 @@
     <p class="slogan"> Nos dedicamos a la fabricación on-demand de consumibles, refacciones industriales y piezas especiales de alta complejidad </p>
 
 <footer class="centrar"> 
- <button class="btncontacto"> <a href="">Contactar</a>
+ <button class="btncontacto"> <a href="#formulario">Contactar</a>
 </button>
 </footer>
 </div>
@@ -57,28 +119,23 @@
     <div class="contenedor-card"> 
 
 
-<div id="card1"> 
-
-  <ul class="groups">
-      <li>
-          <div  class="cardservicios">
-              <div class="image-session1">
-                  <div class="foto1 image"></div>
-              </div>
-
-              <div class="meta-sission1">
-                  <div class="body1">
-                    <h3 class="tituloservicios1">Producción de piezas:</h3>
-                    <div class="contenedorbtn"> 
-              <button class="btn"data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Consumibles Industriales</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
-              <button class="btn"data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Refacciones Críticas</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
-                      </div>
-              </div>
-          </div>
+      <div class="cardser c1">
+        <div class="fotocard">
+            <div class="foto1 imagen"> </div>
         </div>
-      </li>
-  </ul>
-</div>
+
+
+        <div class="contenedor-texto"> 
+        
+          <h3 class="tituloservicios1">Producción de piezas:</h3>
+          <div class="contenedorbtn"> 
+
+            <button class="btn"data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Consumibles Industriales</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
+              <button class="btn"data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Refacciones Críticas</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
+        
+        </div>
+      </div>
+    </div>
 
 <div class="collapse" id="collapseExample1"> 
   <ul class="groups">
@@ -131,27 +188,23 @@
 
 
 
-<div id="card2"> 
+<div class="cardser c2">
+  <div class="fotocard">
+      <div class="foto2 imagen"> </div>
+  </div>
+  
+<div class="contenedor-texto"> 
+  <h3 class="tituloservicios1">Consultorias:</h3>
 
-  <ul class="groups">
-      <li>
-          <div  class="cardservicios">
-              <div class="image-session1">
-                  <div class="foto2 image"></div>
-              </div>
+  <div class="contenedorbtn"> 
 
-              <div class="meta-sission1">
-                  <div class="body1">
-                    <h3 class="tituloservicios1">Consultorias:</h3>
-                    <div class="contenedorbtn"> 
-              <button class="btn"data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Prototipado de piezas complejas</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
+    <button class="btn"data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Prototipado de piezas complejas</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
               <button class="btn"data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"><h4>Diseño herramientas especiales</h4> <i class="flecha fa-solid fa-arrow-right"></i>   </button>
-                      </div>
-              </div>
-          </div>
-        </div>
-      </li>
-  </ul>
+
+</div>
+
+
+
 </div>
 
 
@@ -398,7 +451,7 @@
 
     <div class="card c6">
         <h2>6</h2>
-        <h3>Repetir <br>  </h3>
+        <h3>Repetir <br> <br>  </h3>
         <div class="botonmas"data-bs-toggle="modal" data-bs-target="#exampleModa6"> 
             <i class=" spam fa-solid fa-plus"></i>
             </div>
@@ -536,11 +589,44 @@
 
 
 
-<section>
+<section id="formulario">
 
-    <div class="fondo">
+    <div class="contenedor-formulario">
       <h1>Formulario de Contacto:</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae, in aspernatur esse iusto, neque aperiam fuga veritatis eligendi reiciendis, at aliquam quam expedita minima? Nam recusandae voluptas magnam fugiat?</h2>
+
+
+      <div class="">
+        <label for="inputnombre" class="form-label">Nombre</label>
+        <input type="nombre" name="nombre"  class="form-control" id="inputnombre" placeholder="Nombre y apellido">
+      </div>
+
+      <div class="">
+        <label for="inputtelefono" class="form-label">Teléfono</label>
+        <input type="telefono" name="phone" class="form-control" id="inputtelefono" placeholder="Número de contacto">
+      </div>
+
+      <div class="">
+        <label for="inputmail" class="form-label">Correo electrónico</label>
+        <input type="mail" name="mail"   class="form-control" id="inputmail" placeholder="nombre@mail.com">
+      </div>
+  
+      <div class="">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Confirmar datos
+          </label>
+        </div>
+      </div>
+
+      <footer >
+        <div >
+          <button type="submit" target="_blank" class="botonenviar">Enviar</button>
+        </div>
+    
+        </footer>
+
+
 
     </div>
 </section>
