@@ -27,7 +27,6 @@ body{
 #barranavegacion {
     width: 100%;
     margin: 0 auto;
-    background-color: #e3edf2;
     background-color: #333333;
 }
 .logo{
@@ -38,6 +37,7 @@ body{
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 5px 0;
 }
 #barranavegacion .categorias  .nav-link{
     font-size: 1.4rem;
@@ -58,7 +58,8 @@ body{
 } 
 #barranavegacion .categorias :hover {
     font-weight: 700;  
-    color: #1E88E5;
+    color: #1d4d86;
+    color: #91a3bf;
 }
 #barranavegacion .categorias a :active {
     font-weight: 700;  
@@ -164,13 +165,12 @@ body{
     background-color: #121212;
     width: 900px;
     margin: 0 auto;
-    margin-top: 5px;
-    
+    margin-top: 0;
     width: 100%;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-justify-content: space-between;
+    justify-content: space-between;
 }
 #servicios .contenedor-titulo{
     margin: 0 auto;
@@ -180,25 +180,21 @@ justify-content: space-between;
     padding: 25px;
     background-color: none;
     padding-top: 40px;
-
 }
-
 #servicios .contenedor-titulo h2{
     font-family: "Kanit", sans-serif;
     font-size: 3.6rem;
     font-weight: 500;
-    color: white;
     padding: 0 12px;
+    color: #f5f5f7;
     }
-    #servicios .contenedor-card{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-      
-        flex-wrap: wrap;
-        background-color: #121212;
-        gap: 50px;
-        
+#servicios .contenedor-card{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #121212;
+    gap: 50px;
     }
        
 /* card nuevas verticales */
@@ -428,9 +424,8 @@ background-image: url(../img/istockphoto-1390642489-1024x1024.jpg);}
     font-family: "Kanit", sans-serif;
     font-size: 3.6rem;
     font-weight: 500;
-    color: #272727;
-    color: white;
     padding: 0 12px;
+    color: #f5f5f7;
     }
     #proyectos .contenedor-card{
         margin: 0 auto;
@@ -526,12 +521,17 @@ margin-top: 7px;
     background-color: #f6f6f4;
     width: 900px;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 0;
     align-items: center;
     align-content: center;
     justify-content: center;
     width: 100%;
     padding-bottom: 40px;
+    background: linear-gradient(to bottom right,#00234f, #1d4d86);   
+    background: linear-gradient(70deg,#00234f, #1d4d86);   
+
+
+
 }
 #quienessomos .contenedor-titulo{
     margin: 0 auto;
@@ -540,19 +540,19 @@ margin-top: 7px;
     align-items: flex-start;
     align-content: space-between;
     padding: 20px;
-    background-color: #f6f6f4;
+    background-color: none;
     padding-top: 40px;
 
     }
 #quienessomos .contenedor-titulo :hover{
-    color: #003366;
+    color: white;
     }
 #quienessomos .contenedor-titulo h2{
     font-family: "Kanit", sans-serif;
     font-size: 3.6rem;
     font-weight: 500;
-    color: #272727;
     padding: 0 12px;
+    color: #f5f5f7;
     }
     
 
@@ -568,6 +568,7 @@ margin-top: 7px;
     flex-wrap: wrap;
     padding: 25px 30px;
     margin-top: 30px;
+    background-color: none;
 }
 
 #carouselExampleInterval {
@@ -602,6 +603,9 @@ margin-top: 7px;
 
 #comofunciona{
     background-color: #190d05;
+    background-color: #121212;
+    background: linear-gradient(70deg,#121212, #252525);   
+
     padding-bottom: 40px;
 
 }
@@ -622,9 +626,7 @@ margin-top: 7px;
     font-family: "Kanit", sans-serif;
     font-size: 3.6rem;
     font-weight: 500;
-    color: #272727;
     padding: 0 12px;
-    color: #c5e0fb;
     color: #f5f5f7;
     }
 
@@ -650,13 +652,16 @@ margin-top: 7px;
         transition: all 0.3s;
         margin-bottom: 40px;
         flex-wrap: wrap;
-        box-shadow: 0 3px 4px 0 #0001
+        box-shadow: 0 3px 4px 0 #0001;
+        background-color: #474747;
+        background-color: #252525;
+
 
     }
 
     #comofunciona .contenedor-frase:hover  {
-        scale: 105%;
-        transition: 400ms;
+        scale: 103%;
+        transition: 500ms;
         scale:(1.04);box-shadow: 0 4px 14px 0 #0005;
     }
 
@@ -664,14 +669,14 @@ margin-top: 7px;
     #comofunciona  .contenedor-texto p{
         font-size: 1.6rem;
         font-weight: 500;
-        color: #190d05;
+        color: #f5f5f7;
         text-indent: 2rem;
         line-height: 2.5rem;
     }
 
     #comofunciona  .contenedor-texto p:hover{
         font-size: 16px;
-        color: #190d05;
+        color: #f5f5f7;
         font-weight: 600;
     }
 
@@ -827,7 +832,8 @@ margin-top: 7px;
 #formulario {
     width: 100%;
     margin: 0 auto;
-    background-color: #003366;
+    background-color: #083c72;
+    
     display: flex;
     flex-direction: column;
 align-items: center;
@@ -846,8 +852,8 @@ align-items: center;
     background-color: none;
     display: grid;
     flex-direction: row;
-    padding: 10px;
-    background-color: none;
+    padding: 20px;
+    background-color: #003366;
    
 }
 
@@ -940,7 +946,7 @@ height: auto; text-align: center;}
 
 
 @media screen and (max-width:550px){ #servicios .contenedor-card  .cardser  {   
-width: 90%;  align-items: center; background-color: orange;
+width: 90%;  align-items: center; 
      }    
 }
 
@@ -1007,7 +1013,7 @@ width: 90%;  align-items: center; background-color: orange;
 
 
 
-        @media screen and (max-width:550px){.carruselazul{ width: 96%; padding: 5px; height: auto;}    
+    @media screen and (max-width:550px){.carruselazul { width: 90%; padding: 0px; height: auto;}    
     }
 
 
