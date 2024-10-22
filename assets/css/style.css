@@ -127,8 +127,9 @@
     height: 8rem;
     text-align: left;
     padding: 20px;
-    background-color: snow;
+    background-color: navy;
     border-radius: 12px;
+    color: white;
     }
 
 #mision-vision  .contenedor-texto h4 {
@@ -281,7 +282,9 @@
     height: 12rem;
     text-align: center;
     padding: 15px;
-    background-color: gainsboro;
+    background-color: snow;
+    box-shadow: 0 3px 4px 0 #0001;
+
     border-radius: 15px;
     margin-bottom: 80px;
 
@@ -465,7 +468,12 @@
 #equipo  .contenedor-texto  h3{
     font-weight: 700;
     margin: 0 ;
-        }    
+    }    
+ 
+#equipo  .contenedor-texto  h6{
+    font-weight: 600;
+    margin-top: 0 auto;
+    }        
 
 /* pagina contacto*/
 /* formulario*/          
