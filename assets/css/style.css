@@ -317,7 +317,7 @@
   }
   
   #piedepagina .frase li{
-  padding-bottom: 5px;}
+  padding-bottom: 20px;}
   
   #piedepagina ul{
     list-style: none;
@@ -576,3 +576,29 @@
 #mapa .frase{
     width: 400px;
 }
+
+@media screen and (max-width:550px) { #header .contenedor-header , .contenedor-textos {
+width: 90%; align-items: center; 
+}
+}
+@media screen and (max-width:550px) { #header .contenedor-textos  h1 {
+width: 95%; align-items: center; font-size: 28px;
+}
+}
+
+@media all and (max-width:550px) { .titulo  h2 {
+text-align: center;
+}
+}
+
+@media screen and (max-width:550px) { #mision-vision .contenedor-texto, #servicios .card-servicio , #testimonios .card-testimonio {
+width: 95%; align-items: center; 
+}
+}
+
+
+@media screen and (max-width:550px) { #piedepagina .menu  {
+display: flex; flex-direction: column;  align-items: center; height: auto;  }
+}
+
+
