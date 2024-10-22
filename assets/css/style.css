@@ -209,7 +209,7 @@
     }
     
 #servicios  .contenedor-texto h5{
-    font-weight: 600;
+    font-weight: 700;
     }
 
 /* testimonios*/
@@ -292,6 +292,7 @@
 
 #testimonios  .contenedor-texto h6 {
     font-style: italic;
+    font-weight: 700;
     }
     
 /* footer*/
@@ -335,7 +336,6 @@
     list-style: none;
   }
       
-     
 /* pagina equipo medico*/
 
 /* presentacion*/
@@ -365,7 +365,6 @@
     width: 900px;
     background-color: none;
     box-shadow: 0 3px 4px 0 #0001;
-    transition: all 0.3s;
 }
 
 #presentacion  .contenedor-imagen .imagen{
@@ -471,7 +470,7 @@
     }    
  
 #equipo  .contenedor-texto  h6{
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 0 auto;
     }        
 
