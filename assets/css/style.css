@@ -120,16 +120,20 @@
     }
 
 #mision-vision  .contenedor-texto {
-    margin: 40px auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     width: 350px;
     height: 8rem;
     text-align: left;
-    padding: 25px;
+    padding: 20px;
     background-color: snow;
     border-radius: 12px;
     }
+
+#mision-vision  .contenedor-texto h4 {
+    margin: 0 auto;       
+    }  
 
 /* servicios*/
 
@@ -188,7 +192,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 280px;
+    width: 100%;
     height: 14rem;
     display: block;
     flex-grow: 1;
@@ -287,7 +291,7 @@
 #piedepagina{
     margin: 0 auto;
     width: 100%;
-    height: 9rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -301,10 +305,10 @@
     display: flex;
     flex-direction: row;
     width: 90%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 20px;
   }
 
   #piedepagina .frase{
@@ -314,6 +318,7 @@
     font-size: 14px;
     font-weight: 600;
     color: white;
+    padding: 20px;
   }
   
   #piedepagina .frase li{
@@ -577,7 +582,23 @@
     width: 400px;
 }
 
-@media screen and (max-width:550px) { #header .contenedor-header , .contenedor-textos {
+@media screen and (max-width:550px) { #barranavegacion   {
+height: auto;
+}
+}
+@media screen and (max-width:550px) { #barranavegacion .menu  {
+display: flex; flex-direction: column;  align-items: center; 
+justify-content: center; padding-top: 10px;
+}
+}
+
+@media screen and (max-width:550px) { #barranavegacion .menu .nav-item {
+padding-bottom: 10px;
+}
+}
+
+@media screen and (max-width:550px) { #header .contenedor-header , .contenedor-textos ,
+    #presentacion .contenedor-presentacion {
 width: 90%; align-items: center; 
 }
 }
@@ -586,19 +607,29 @@ width: 95%; align-items: center; font-size: 28px;
 }
 }
 
-@media all and (max-width:550px) { .titulo  h2 {
-text-align: center;
+@media screen and (max-width:550px) { #servicios .titulo , #testimonios .titulo  {
+justify-content: center;}
+}
+
+@media screen and (max-width:550px) { #mision-vision .contenedor-texto, #servicios .card-servicio , #testimonios .card-testimonio ,#equipo .card-medico ,
+    #formulario .contenedor-formulario , #mapa .contenedor-mapa {
+width: 95%; align-items: center; 
 }
 }
 
-@media screen and (max-width:550px) { #mision-vision .contenedor-texto, #servicios .card-servicio , #testimonios .card-testimonio {
-width: 95%; align-items: center; 
+@media screen and (max-width:550px) { #servicios .card-servicio .imagen , #testimonios .card-testimonio ,#equipo .card-medico  .imagen {
+width: 400px; align-items: center; 
+}
+}
+
+@media screen and (max-width:550px) { #piedepagina  {
+height: auto;
 }
 }
 
 
 @media screen and (max-width:550px) { #piedepagina .menu  {
-display: flex; flex-direction: column;  align-items: center; height: auto;  }
+display: flex; flex-direction: column;  align-items: center; 
+justify-content: center;
 }
-
-
+}
