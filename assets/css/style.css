@@ -207,6 +207,10 @@
     padding: 15px;
     }
     
+#servicios  .contenedor-texto h5{
+    font-weight: 600;
+    }
+
 /* testimonios*/
 
 #testimonios {
