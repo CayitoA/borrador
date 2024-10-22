@@ -22,7 +22,7 @@
     flex-direction: row;
     width: 60%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     background-color: none;
     }
@@ -175,13 +175,13 @@
     }
     
 #servicios  .contenedor-imagen .foto1{
-    background-image: url(assets/img/istockphoto-1344792109-612x612.jpg)
+    background-image: url(../img/istockphoto-1344792109-612x612.jpg)
     }
 #servicios  .contenedor-imagen .foto2{
-    background-image: url(assets/img/images.jpg);
+    background-image: url(../img/images.jpg);
     }
 #servicios  .contenedor-imagen .foto3{
-    background-image: url(assets/img/images-1.jpg);
+    background-image: url(../img/images-1.jpg);
     }
 
 #servicios .imagen{
@@ -242,16 +242,16 @@
     }
     
 #testimonios  .contenedor-imagen .foto1{
-    background-image: url(assets/img/download-1.jpg)
+    background-image: url(../img/download-1.jpg)
     }
 #testimonios  .contenedor-imagen .foto2{
-    background-image: url(assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
+    background-image: url(../img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
     }
 #testimonios  .contenedor-imagen .foto3{
-    background-image: url(assets/img/download.jpg);
+    background-image: url(../img/download.jpg);
     }
 #testimonios  .contenedor-imagen .foto4{
-    background-image: url(assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
+    background-image: url(../img/premium_photo-1677671874390-7719133c82b4.jpg);
     }    
 
 #testimonios .imagen{
@@ -314,7 +314,6 @@
     font-size: 14px;
     font-weight: 600;
     color: white;
-    
   }
   
   #piedepagina .frase li{
@@ -423,16 +422,16 @@
     }
     
 #equipo  .contenedor-imagen .foto1{
-    background-image: url(assets/img/images-5.jpg)
+    background-image: url(../img/images-5.jpg)
     }
 #equipo  .contenedor-imagen .foto2{
-    background-image: url(assets/img/images-2.jpg);
+    background-image: url(../img/images-2.jpg);
     }
 #equipo  .contenedor-imagen .foto3{
-    background-image: url(assets/img/images-12.jpg);
+    background-image: url(../img/images-12.jpg);
     }
 #equipo  .contenedor-imagen .foto4{
-    background-image: url(assets/img/images-3.jpg);
+    background-image: url(../img/images-3.jpg);
     }    
 
 #equipo .imagen{
@@ -559,7 +558,7 @@
 }
 
 #mapa  .contenedor-imagen .imagen{
-    background-image: url(assets/img/mapas.jpg);
+    background-image: url(../img/mapas.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
