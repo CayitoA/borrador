@@ -1,0 +1,638 @@
+//variables
+$colorprincipal:navy;
+$colorfondo:#ecf9fc;
+$colorfondo2:#f9f8fd;
+$colorfondo3:whitesmoke;
+$colorcard:snow;
+$colortexto2:white;
+$font-family: "Inter", sans-serif;
+$width:900px;
+$box-shadow: 0 3px 4px 0 #0001;
+$margin: 60px 0;
+$margin0: 0 auto;
+$border-radius: 20px;
+
+
+
+*{
+    font-family:$font-family;
+   
+  }
+
+#barranavegacion  {
+    width: 100%;
+    height: 5rem;
+    background-color: $colorprincipal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu {
+    margin:$margin0;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+  
+&__item {
+    list-style: none;
+    color:$colortexto2;
+    }
+
+&__item a {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:$colortexto2;
+    }
+}
+.menu .btn {
+    background-color: $colortexto2;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 5px;
+    }
+
+@media screen and (max-width:550px) { #barranavegacion { 
+    height: auto;
+    }
+    }
+
+@media screen and (max-width:550px) { #barranavegacion .menu  {
+    display: flex; flex-direction: column;  align-items: center; 
+    justify-content: center; padding-top: 10px;
+    }
+    }
+        
+@media screen and (max-width:550px) { #barranavegacion .menu .menu__item {
+    padding-bottom: 10px;
+    }
+    }
+
+// header
+
+#header{
+    margin: $margin0;
+    display: flex;
+    background-color:$colorfondo;
+    justify-content: center;
+}
+
+ .card--header__item{
+    margin: $margin;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: $border-radius;
+}
+
+ .card--header__imagen{
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: 450px;
+    background-color: none;
+    box-shadow: $box-shadow;
+}
+
+ .imagen{
+    background-image: url(./assets/img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+ .card--header__textos{
+    margin: $margin0;
+    display: flex;
+    background-color: none;
+    height: 23rem;
+}
+
+#header .frase{
+    width: 400px;
+    padding: 20px;
+    font-size: 36px;
+}
+@media screen and (max-width:550px) { #header .card--header__item , .card--header__textos ,
+    #presentacion .contenedor--presentacion {
+width: 90%; align-items:center; 
+}
+}
+@media screen and (max-width:550px) { #header .card--header__textos  h1 {
+width: 95%; align-items: center; font-size: 28px; 
+}
+}
+
+//seccion mision vision
+
+#misionvision{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo3;
+    justify-content: center;
+    }
+
+.mision--vision{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+&__item {
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 8rem;
+    text-align: left;
+    padding: 20px;
+    background-color: $colorprincipal;
+    border-radius: 12px;
+    color: $colortexto2;
+    box-shadow: $box-shadow;
+    }
+
+&__item h4 {
+    margin: $margin0;       
+    }  
+}
+
+@media screen and (max-width:550px) { #misionvision .mision--vision__item , #servicios .card--servicio__item , #testimonios .card--testimonio__item , #equipo .card-medico__item ,
+    #formulario .contenedor--formulario , #mapa .contenedor--mapa {
+width: 95%; align-items: center;
+}
+}
+
+//seccion servicios
+
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+.titulo{
+    margin: $margin0;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    }
+
+@media screen and (max-width:550px) { #servicios .titulo , #testimonios .titulo , #equipo .titulo  {
+    justify-content: center;}
+    }    
+
+.card--servicio{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+&__item{
+    width: 280px;
+    height: auto;
+    background-color:$colorcard;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: $box-shadow;
+    transition: all 0.3s;
+    overflow: hidden;
+    }
+    
+  &__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 14rem;
+    display: block;
+    flex-grow: 1;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: left;
+    padding: 15px;
+    }
+    
+&__texto h5{
+    font-weight: 700;
+    } 
+ }
+
+.foto1{
+    background-image: url(./assets/img/istockphoto-1344792109-612x612.jpg)
+    }
+.foto2{
+    background-image: url(./assets/img/images.jpg);
+    }
+.foto3{
+    background-image: url(./assets/img/images-1.jpg);
+    }
+
+@media screen and (max-width:550px) { #servicios .card--servicio__item  , #testimonios .card--testimonio__item .card--testimonio__imagen, #equipo .card--medico__item .card--medico__imagen {
+            width: 400px; align-items: center; 
+            }
+            }
+
+// seccion testimonios    
+
+#testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+.card--testimonio{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+&__item{
+    width: 210px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+ 
+&__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 210px;
+    height: 210px;
+    display: block;
+    flex-grow: 1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: center;
+    padding: 15px;
+    background-color:$colorcard;
+    box-shadow:$box-shadow;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    }
+
+&__texto h6 {
+    font-style: italic;
+    font-weight: 700;
+    }
+}
+
+#testimonios .foto1{
+    background-image: url(./assets/img/download-1.jpg);
+    }
+#testimonios .foto2{
+    background-image: url(./assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
+    }
+#testimonios .foto3{
+    background-image: url(./assets/img/download.jpg);
+    }
+#testimonios  .foto4{
+    background-image: url(./assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
+    }    
+ // footer
+ 
+#piedepagina{
+    margin: $margin0;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorprincipal;
+  }
+  
+.piedepagina__menu {
+    margin: $margin0;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+.piedepagina__frase{
+    margin: $margin0;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: $colortexto2;
+    padding: 20px;
+  }
+  
+.piedepagina__frase li{
+  padding-bottom: 20px;}
+  
+ul{
+    list-style: none;
+  }
+       
+@media screen and (max-width:550px) { #piedepagina  {
+    height: auto;
+    }
+    }
+    
+@media screen and (max-width:550px) { #piedepagina .piedepagina__menu  {
+    display: flex; flex-direction: column;  align-items: center; 
+    justify-content: center;
+    }
+    }  
+
+//pagina equipo medico
+/* presentacion*/
+
+#presentacion{
+    margin: $margin0;
+    display: flex;
+    background-color:$colorfondo;
+    justify-content: center;
+}
+
+#presentacion .contenedor--presentacion{
+    margin: $margin;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: $border-radius;
+}
+
+#presentacion  .contenedor--presentacion__imagen{
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: $width;
+    box-shadow: $box-shadow;
+}
+
+#presentacion  .imagen2{
+    background-image: url(../img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+#presentacion  .contenedor--presentacion__textos{
+    margin: $margin0;
+    display: flex;
+    background-color: none;
+    height: auto;
+}
+
+#presentacion .frase{
+    width: 600px;
+    padding: 20px;
+    font-size: 28px;
+}
+@media screen and (max-width:550px) {  #presentacion .contenedor--presentacion {
+width: 90%; align-items:center; 
+}
+}
+/* equipo*/  
+
+#equipo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+#equipo .titulo{
+    margin: $margin0;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    }
+
+#equipo .card--medico{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+&__item{
+    width: 210px;
+    height: auto;
+    background-color:$colorcard;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: $margin;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    }
+    
+&__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 210px;
+    height: 12rem;
+    display: block;
+    flex-grow: 1;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: left;
+    padding: 15px;
+    }
+}
+
+#equipo  .foto1{
+    background-image: url(./assets/img/images-5.jpg);
+    }
+#equipo .foto2{
+    background-image: url(./assets/img/images-2.jpg);
+    }
+#equipo .foto3{
+    background-image: url(./assets/img/images-12.jpg);
+    }
+#equipo .foto4{
+    background-image: url(./assets/img/images-3.jpg);
+    }    
+
+#equipo  h3{
+    font-weight: 700;
+    margin: 0 ;
+    }    
+ 
+#equipo  h6{
+    font-weight: 700;
+    margin-top: $margin0;
+    }        
+
+// pagina contacto
+
+/* formulario*/          
+
+#formulario {
+    width: 100%;
+    margin: $margin0;
+    background-color:$colorfondo3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+#formulario .contenedor--formulario {
+    width: 360px;
+    max-width: 370px;
+    flex-grow: 1;
+    margin: 60px 10px ;
+    text-align: left;
+    border-radius: 12px;
+    font-weight: 600;
+    display: grid;
+    flex-direction: row;
+    padding: 40px 30px ;
+    border: $box-shadow;
+    border-radius: 10px;
+}
+
+#formulario  h1 {
+    font-weight: 600;
+    color: $colorprincipal;
+    text-align: center;
+}
+
+#formulario .casilla{
+    padding: 10px 0;
+}
+
+#formulario .casilla .form-label{
+    color:$colorprincipal;
+}
+
+#formulario .btn-enviar{
+    padding-top: 20px ;
+}
+
+#formulario  .botonenviar {
+    background-color:$colorprincipal;
+    color:$colortexto2;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#formulario .form-label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#formulario .form-check-label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#formulario  footer  {
+    display: flex;
+    justify-content: center;    
+}
+
+/* mapa unicacion*/          
+
+#mapa{
+    margin: $margin0;
+    display: flex;
+    background-color: $colorfondo;
+    justify-content: center;
+}
+
+#mapa .contenedor--mapa{
+    margin: $margin;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: $border-radius;
+}
+
+#mapa  .contenedor--mapa__imagen{
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: 450px;
+    box-shadow: $box-shadow;
+}
+
+#mapa   .imagenmapa{
+    background-image: url(./assets/img/mapas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+}
+
+#mapa   .contenedor--mapa__textos{
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: right;
+}
+
+#mapa .frase{
+    padding: 10px;
+   
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="estilos.css">
 
     <!--  font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -20,27 +20,29 @@
 
 <body>
 
-<nav id="barranavegacion">
-    <div>
-        <ul class="menu">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo-color-banner.svg" alt="" width="auto" height="30px">
-              </a>
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="equipo.html">Equipo Médico</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <button class="btn"> Reservar cita</button>
-            </li>
-    </ul>
-    </div>
-</nav>
+
+    <nav id="barranavegacion">
+        <div>
+            <ul class="menu">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-color-banner.svg" alt="" width="auto" height="30px">
+                  </a>
+                <li class="menu__item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="nav-link active" href="equipo.html">Equipo Médico</a>
+                </li>
+                <li class="menu__item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <button class="btn"> Reservar cita</button>
+                </li>
+        </ul>
+        </div>
+    </nav>
+    
 
 
 
@@ -48,7 +50,7 @@
 <main>
 
 <section id="formulario">
-    <div class="contenedor-formulario">
+    <div class="contenedor--formulario">
         <h1>Formulario de Contacto</h1>
         <div class="casilla">
             <label for="inputnombre" class="form-label texto">Nombre</label>
@@ -59,7 +61,7 @@
             <label for="inputtelefono" class="form-label">Correo electrónico</label>
             <input type="telefono" name="phone" class="form-control" id="inputtelefono" placeholder="mail@mail.com">
         </div>
-    
+
         <div class="casilla">
             <label for="inputmail" class="form-label">Asunto</label>
             <input type="mail" name="mail"   class="form-control" id="inputmail" placeholder="asunto">
@@ -69,7 +71,6 @@
             <label for="inputmail" class="form-label">Mensaje</label>
             <input type="mail" name="mail"   class="form-control" id="inputmail" placeholder="mensaje">
         </div>
-      
       
         <div class="casilla">
             <div class="form-check">
@@ -89,15 +90,12 @@
         </div>
     </section>
 
-
-
-
 <article id="mapa">
-    <div class="contenedor-mapa">
-        <div class="contenedor-imagen"> 
-            <div class="imagen"></div>
+    <div class="contenedor--mapa">
+        <div class="contenedor--mapa__imagen"> 
+            <div class="imagenmapa"></div>
         </div>
-        <div class="contenedor-textos">
+        <div class="contenedor--mapa__textos">
             <h2>Ubicación</h2>
             <h3 class="frase">Av. Irarrazaval #1500</h3>
             <h3 class="frase">Ñuñoa</h3>
@@ -109,18 +107,17 @@
     
 </main>
 
-
 <footer id="piedepagina">
-    <div class="menu"> 
+    <div class="piedepagina__menu"> 
         
-        <div class="frase">
+        <div class="piedepagina__frase">
             <ul>
                 <li> <i class=" fa-solid fa-location-dot"></i>Av. Irarrazaval #1500</li>
                 <li>Ñuñoa, Santiago</li>
             </ul>
         </div>
 
-        <div class="frase">
+        <div class="piedepagina__frase">
             <ul>
                 <li> <i class=" fa-regular fa-envelope"></i>contacto@clinica.com</li>
                 <li>56223342158</li>
