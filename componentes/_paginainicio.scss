@@ -1,0 +1,258 @@
+@use '../modulos/variables' as * ;
+body {
+  background-color: $colorfondo2;
+}
+// header
+
+#header{
+    margin: $margin0;
+    display: flex;
+    background-color:$colorfondo;
+    justify-content: center;
+}
+
+ .card--header__item{
+    margin: $margin;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: $border-radius;
+}
+
+ .card--header__imagen{
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: 450px;
+    background-color: none;
+    box-shadow: $box-shadow;
+}
+
+ .imagen{
+    background-image: url(./assets/img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+ .card--header__textos{
+    margin: $margin0;
+    display: flex;
+    background-color: none;
+    height: 23rem;
+}
+
+#header .frase{
+    width: 400px;
+    padding: 20px;
+    font-size: 36px;
+}
+@media screen and (max-width:550px) { #header .card--header__item , .card--header__textos ,
+    #presentacion .contenedor--presentacion {
+width: 90%; align-items:center; 
+}
+}
+@media screen and (max-width:550px) { #header .card--header__textos  h1 {
+width: 95%; align-items: center; font-size: 28px; 
+}
+}
+
+//seccion mision vision
+
+#misionvision{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo3;
+    justify-content: center;
+    }
+
+.mision--vision{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+&__item {
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 8rem;
+    text-align: left;
+    padding: 20px;
+    background-color: $colorprincipal;
+    border-radius: 12px;
+    color: $colortexto2;
+    box-shadow: $box-shadow;
+    }
+
+&__item h4 {
+    margin: $margin0;       
+    }  
+}
+
+@media screen and (max-width:550px) { #misionvision .mision--vision__item , #servicios .card--servicio__item , #testimonios .card--testimonio__item , #equipo .card-medico__item ,
+    #formulario .contenedor--formulario , #mapa .contenedor--mapa {
+width: 95%; align-items: center;
+}
+}
+
+//seccion servicios
+
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+.titulo{
+    margin: $margin0;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    }
+
+@media screen and (max-width:550px) { #servicios .titulo , #testimonios .titulo , #equipo .titulo  {
+    justify-content: center;}
+    }    
+
+.card--servicio{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+&__item{
+    width: 280px;
+    height: auto;
+    background-color:$colorcard;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: $box-shadow;
+    transition: all 0.3s;
+    overflow: hidden;
+    }
+    
+  &__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 14rem;
+    display: block;
+    flex-grow: 1;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: left;
+    padding: 15px;
+    }
+    
+&__texto h5{
+    font-weight: 700;
+    } 
+ }
+
+.foto1{
+    background-image: url(./assets/img/istockphoto-1344792109-612x612.jpg)
+    }
+.foto2{
+    background-image: url(./assets/img/images.jpg);
+    }
+.foto3{
+    background-image: url(./assets/img/images-1.jpg);
+    }
+
+@media screen and (max-width:550px) { #servicios .card--servicio__item  , #testimonios .card--testimonio__item .card--testimonio__imagen, #equipo .card--medico__item .card--medico__imagen {
+            width: 400px; align-items: center; 
+            }
+            }
+
+// seccion testimonios    
+
+#testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+.card--testimonio{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+&__item{
+    width: 210px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+ 
+&__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 210px;
+    height: 210px;
+    display: block;
+    flex-grow: 1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: center;
+    padding: 15px;
+    background-color:$colorcard;
+    box-shadow:$box-shadow;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    }
+
+&__texto h6 {
+    font-style: italic;
+    font-weight: 700;
+    }
+}
+
+#testimonios .foto1{
+    background-image: url(./assets/img/download-1.jpg);
+    }
+#testimonios .foto2{
+    background-image: url(./assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
+    }
+#testimonios .foto3{
+    background-image: url(./assets/img/download.jpg);
+    }
+#testimonios  .foto4{
+    background-image: url(./assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
+    }   
