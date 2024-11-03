@@ -48,9 +48,9 @@
 #presentacion .frase{
     width: 600px;
     padding: 20px;
-    font-size: 28px;
+    font-size: 18px;
 }
-@media screen and (max-width:550px) {  #presentacion .contenedor--presentacion {
+@media screen and (max-width:550px) {  #presentacion .contenedor--presentacion .frase {
 width: 90%; align-items:center; 
 }
 }
@@ -135,3 +135,9 @@ width: 90%; align-items:center;
     font-weight: 700;
     margin-top: $margin0;
     }        
+
+    @media screen and (max-width:550px) { #equipo .card--medico__item
+        {
+    width: 95%; align-items: center; justify-content: center;
+    }
+    }

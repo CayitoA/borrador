@@ -97,8 +97,8 @@ width: 95%; align-items: center; font-size: 28px;
     }  
 }
 
-@media screen and (max-width:550px) { #misionvision .mision--vision__item , #servicios .card--servicio__item , #testimonios .card--testimonio__item , #equipo .card-medico__item ,
-    #formulario .contenedor--formulario , #mapa .contenedor--mapa {
+@media screen and (max-width:550px) { #misionvision .mision--vision__item , #servicios .card--servicio__item , #testimonios .card--testimonio__item  
+    {
 width: 95%; align-items: center;
 }
 }

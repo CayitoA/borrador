@@ -110,10 +110,22 @@
     display: flex;
     flex-direction: column;
     height: 25rem;
-    justify-content: right;
+    justify-content: center;
 }
 
 #mapa .frase{
-    padding: 10px;
-   
+    padding: 5px 10px;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:550px) { 
+    #formulario .contenedor--formulario , #mapa .contenedor--mapa  .contenedor--mapa__textos{
+width: 95%; align-items: center; justify-content: center;
+}
+}
+@media screen and (max-width:550px) { 
+ #mapa .contenedor--mapa__imagen, .contenedor--mapa__textos{
+width: 90%; justify-content: center;
+}
 }

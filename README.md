@@ -1,8 +1,8 @@
-** mi primer readme**
-prueba de readme para tarea de sitio web Hospital
+** ejercicio  2 **
+ readme para tarea de sitio web Hospital
 
 Herramientas:
-Html5, CCs
+Html5, Css, Sass
 
 Autor:
 Claudio Astorga
