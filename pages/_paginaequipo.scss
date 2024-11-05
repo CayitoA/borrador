@@ -1,0 +1,138 @@
+@use '../abstracts/variables' as * ;
+
+//pagina equipo medico
+/* presentacion*/
+
+#presentacion{
+    margin: $margin0;
+    display: flex;
+    background-color:$colorfondo;
+    justify-content: center;
+}
+
+#presentacion .contenedor--presentacion{
+    margin: $margin;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: $border-radius;
+}
+
+#presentacion  .contenedor--presentacion__imagen{
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: $width;
+    box-shadow: $box-shadow;
+}
+
+#presentacion  .imagen2{
+    background-image: url(../img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+#presentacion  .contenedor--presentacion__textos{
+    margin: $margin0;
+    display: flex;
+    background-color: none;
+    height: auto;
+}
+
+#presentacion .frase{
+    width: 600px;
+    padding: 20px;
+    font-size: 18px;
+}
+@media screen and (max-width:550px) {  #presentacion .contenedor--presentacion .frase {
+width: 90%; align-items:center; 
+}
+}
+/* equipo*/  
+
+#equipo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$colorfondo2;
+    justify-content: center;
+    }
+
+ .titulo{
+    margin: $margin0;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    }
+    
+ .card--medico{
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+&__item{
+    width: auto;
+    height: auto;
+    background-color:$colorcard;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    }
+    
+&__imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 12rem;
+    display: block;
+    flex-grow: 1;
+    }
+      
+&__texto {
+    margin: $margin0;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    text-align: left;
+    padding: 15px;
+    }
+}
+
+#equipo  .foto1{
+    background-image: url(./assets/img/images-5.jpg);
+    }
+#equipo .foto2{
+    background-image: url(./assets/img/images-2.jpg);
+    }
+#equipo .foto3{
+    background-image: url(./assets/img/images-12.jpg);
+    }
+#equipo .foto4{
+    background-image: url(./assets/img/images-3.jpg);
+    }    
+
+#equipo  h3{
+    font-weight: 700;
+    margin: 0 ;
+    }    
+ 
+#equipo  h6{
+    font-weight: 700;
+    margin-top: $margin0;
+    }        
+

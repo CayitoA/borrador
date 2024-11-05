@@ -1,8 +1,11 @@
-** ejercicio  2 **
+** ejercicio  3 **
  readme para tarea de sitio web Hospital
+ Preprocesador SASS
+ Metodologia BEM
+ Framework Bootstrap
 
 Herramientas:
-Html5, Css, Sass
+Html5, Css, Sass, Boostrap
 
 Autor:
 Claudio Astorga
