@@ -97,7 +97,7 @@ width: 90%; align-items:center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: auto;
     height: 12rem;
     display: block;
     flex-grow: 1;
@@ -129,10 +129,17 @@ width: 90%; align-items:center;
 #equipo  h3{
     font-weight: 700;
     margin: 0 ;
+    font-size: 22px;
     }    
- 
-#equipo  h6{
-    font-weight: 700;
+#equipo  h4{
+    font-weight: 600;
+    margin: 0 ;
+    font-size: 20px;
+    }    
+
+#equipo  h5{
+    font-weight: 600;
     margin-top: $margin0;
+    font-size: 14px;
     }        
 

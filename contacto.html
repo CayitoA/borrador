@@ -16,9 +16,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
+<!--  bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+
 </head>
 
 <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
 
 
     <nav id="barranavegacion">
@@ -42,16 +47,12 @@
         </ul>
         </div>
     </nav>
-    
-
-
-
 
 <main>
 
 <section id="formulario">
-    <div class="contenedor--formulario">
-        <h1>Formulario de Contacto</h1>
+    <div class="contenedor--formulario col-12 col-md-10  ajuste--margen">
+        <h2>Formulario de Contacto</h2>
         <div class="casilla">
             <label for="inputnombre" class="form-label texto">Nombre</label>
             <input type="nombre" name="nombre"  class="form-control" id="inputnombre" placeholder="Nombre y apellido">
@@ -93,45 +94,28 @@
 
 <section>
     <article id="mapa">
-        <div class="contenedor--mapa col-12 col-md-8 ">
+        <div class="contenedor--mapa ">
+            <div class="col-12 col-md-6  ajuste--margen">
             <div class="contenedor--mapa__imagen "> 
                 <div class="imagenmapa"> 
                 </div>
             </div>
-            <div class="contenedor--mapa__textos col-12 col-md-4">
+        </div>
+            <div class="col-12 col-md-6  ajuste--margen"> 
+            <div class="contenedor--mapa__textos ">
                 <h2>Ubicación</h2>
                 <h3 class="frase">Av. Irarrazaval #1500</h3>
                 <h3 class="frase">Ñuñoa</h3>
                 <h3 class="frase">contacto@clinica.com</h3>
-                <h3 class="frase">56223342158</h3>            </div>
+                <h3 class="frase">56223342158</h3>            
+            </div>
         </div>
-
-
+        </div>
 
     </article>
 </section>
 
-<article id="">
-    
 
-
-    <div class="contenedor--mapa ">
-        <div class="col-12 col-md-6"> 
-        <div class="contenedor--mapa__imagen "> 
-            <div class="imagenmapa"></div>
-        </div>
-    </div>
-    <div class="col-12 col-md-6">
-        <div class="contenedor--mapa__textos">
-            <h2>Ubicación</h2>
-            <h3 class="frase">Av. Irarrazaval #1500</h3>
-            <h3 class="frase">Ñuñoa</h3>
-            <h3 class="frase">contacto@clinica.com</h3>
-            <h3 class="frase">56223342158</h3>
-        </div>
-    </div>
-    </div>
-</article>    
     
 </main>
 
