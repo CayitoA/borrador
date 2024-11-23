@@ -109,7 +109,7 @@ width: 95%; align-items: center; font-size: 28px;
     }
 
 .titulo{
-    margin: $margin0;
+    margin: $margin;
     width: $width;
     height: auto;
     display: flex;
@@ -212,6 +212,8 @@ width: 95%; align-items: center; font-size: 28px;
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: hidden;
+    margin: 40px 0;
+
 }
  
 &__imagen{

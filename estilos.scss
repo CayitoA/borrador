@@ -1,9 +1,9 @@
-@use './modulos/base';
-@use './componentes/barranavegacion';
-@use './componentes/paginacontacto';
-@use './componentes/paginaequipo';
-@use './componentes/paginainicio';
-@use './componentes/piedepagina';
+@use './componentes/base';
+@use './layout/barranavegacion';
+@use './pages/paginacontacto';
+@use './pages/paginaequipo';
+@use './pages/paginainicio';
+@use './layout/piedepagina';
 
 
 

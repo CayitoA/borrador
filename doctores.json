@@ -1,0 +1,26 @@
+[
+    {
+        "rut": "12.345.678-9",
+        "nombre": "Gonzalo",
+        "apellido": "Pérez",
+        "experiencia": 4
+    },
+    {
+        "rut": "98.765.432-1",
+        "nombre": "Pamela",
+        "apellido": "Diaz",
+        "experiencia": 3
+    },
+    {
+        "rut": "11.223.344-5",
+        "nombre": "Alejandro ",
+        "apellido": "Soto",
+        "experiencia": 7
+    },
+    {
+        "rut": "11.223.344-5",
+        "nombre": "Alicia ",
+        "apellido": "Soto",
+        "experiencia": 5
+    }
+]

@@ -1,10 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: "Inter", sans-serif;
 }
 
@@ -65,459 +59,6 @@ body {
     padding-bottom: 10px;
   }
 }
-#piedepagina {
-  margin: 0 auto;
-  width: 100%;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: navy;
-}
-
-.piedepagina__menu {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.piedepagina__frase {
-  margin: 0 auto;
-  text-decoration: none;
-  text-transform: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  padding: 20px;
-}
-
-.piedepagina__frase li {
-  padding-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-@media screen and (max-width: 550px) {
-  #piedepagina {
-    height: auto;
-  }
-}
-@media screen and (max-width: 550px) {
-  #piedepagina .piedepagina__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-body {
-  background-color: #f9f8fd;
-}
-
-#header {
-  margin: 0 auto;
-  display: flex;
-  background-color: #ecf9fc;
-  justify-content: center;
-}
-
-.card--header__item {
-  margin: 60px 0;
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: cornsilk;
-  border-radius: 20px;
-}
-
-.card--header__imagen {
-  border-radius: 20px;
-  overflow: hidden;
-  width: auto;
-  width: 450px;
-  background-color: none;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-}
-
-.imagen {
-  background-image: url(./assets/img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 30rem;
-}
-
-.card--header__textos {
-  margin: 0 auto;
-  display: flex;
-  background-color: none;
-  height: 23rem;
-  justify-content: center;
-}
-
-#header .frase {
-  padding: 20px;
-  font-size: 28px;
-}
-
-@media screen and (max-width: 550px) {
-  #header .card--header__item, .card--header__textos,
-  #presentacion .contenedor--presentacion {
-    width: 90%;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 550px) {
-  #header .card--header__textos h1 {
-    width: 95%;
-    align-items: center;
-    font-size: 28px;
-  }
-}
-#misionvision {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: whitesmoke;
-  justify-content: center;
-}
-
-.mision--vision {
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.mision--vision__item {
-  margin: 60px 0;
-  display: flex;
-  flex-direction: column;
-  height: 8rem;
-  text-align: left;
-  padding: 20px;
-  background-color: navy;
-  border-radius: 12px;
-  color: white;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-}
-.mision--vision__item h5 {
-  margin: 0 auto;
-  font-size: 14px;
-}
-
-#servicios {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f9f8fd;
-  justify-content: center;
-}
-
-.titulo {
-  margin: 0 auto;
-  width: 950px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 550px) {
-  #servicios .titulo, #testimonios .titulo, #equipo .titulo {
-    justify-content: center;
-  }
-}
-.ajuste--margen {
-  padding: 0 10px;
-}
-
-.card--servicio {
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.card--servicio__item {
-  width: auto;
-  height: auto;
-  background-color: snow;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-radius: 12px;
-  margin: 40px 0;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-  overflow: hidden;
-}
-.card--servicio__imagen {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 14rem;
-  display: block;
-  flex-grow: 1;
-}
-.card--servicio__texto {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 12rem;
-  text-align: left;
-  padding: 30px 20px;
-}
-.card--servicio__texto h2 {
-  font-weight: 700;
-  font-size: 26px;
-}
-.card--servicio__texto h5 {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.foto1 {
-  background-image: url(./assets/img/istockphoto-1344792109-612x612.jpg);
-}
-
-.foto2 {
-  background-image: url(./assets/img/images.jpg);
-}
-
-.foto3 {
-  background-image: url(./assets/img/images-1.jpg);
-}
-
-#testimonios {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f9f8fd;
-  justify-content: center;
-}
-
-.card--testimonio {
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.card--testimonio__item {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.card--testimonio__imagen {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: auto;
-  height: 210px;
-  display: block;
-  flex-grow: 1;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.card--testimonio__texto {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 12rem;
-  text-align: center;
-  padding: 30px 20px;
-  background-color: snow;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-  border-radius: 15px;
-  margin-bottom: 80px;
-}
-.card--testimonio__texto h2 {
-  font-style: italic;
-  font-weight: 700;
-  font-size: 26px;
-}
-.card--testimonio__texto h6 {
-  font-style: italic;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-#testimonios .foto1 {
-  background-image: url(./assets/img/download-1.jpg);
-}
-
-#testimonios .foto2 {
-  background-image: url(./assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
-}
-
-#testimonios .foto3 {
-  background-image: url(./assets/img/download.jpg);
-}
-
-#testimonios .foto4 {
-  background-image: url(./assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
-}
-
-/* presentacion*/
-#presentacion {
-  margin: 0 auto;
-  display: flex;
-  background-color: #ecf9fc;
-  justify-content: center;
-}
-
-#presentacion .contenedor--presentacion {
-  margin: 60px 0;
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: cornsilk;
-  border-radius: 20px;
-}
-
-#presentacion .contenedor--presentacion__imagen {
-  border-radius: 20px;
-  overflow: hidden;
-  width: 950px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-}
-
-#presentacion .imagen2 {
-  background-image: url(../img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 30rem;
-}
-
-#presentacion .contenedor--presentacion__textos {
-  margin: 0 auto;
-  display: flex;
-  background-color: none;
-  height: auto;
-}
-
-#presentacion .frase {
-  width: 600px;
-  padding: 20px;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 550px) {
-  #presentacion .contenedor--presentacion .frase {
-    width: 90%;
-    align-items: center;
-  }
-}
-/* equipo*/
-#equipo {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f9f8fd;
-  justify-content: center;
-}
-
-.titulo {
-  margin: 0 auto;
-  width: 950px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-
-.card--medico {
-  width: 950px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.card--medico__item {
-  width: auto;
-  height: auto;
-  background-color: snow;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-radius: 12px;
-  margin: 40px 0;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
-  overflow: hidden;
-}
-.card--medico__imagen {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: auto;
-  height: 12rem;
-  display: block;
-  flex-grow: 1;
-}
-.card--medico__texto {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 12rem;
-  text-align: left;
-  padding: 15px;
-}
-
-#equipo .foto1 {
-  background-image: url(./assets/img/images-5.jpg);
-}
-
-#equipo .foto2 {
-  background-image: url(./assets/img/images-2.jpg);
-}
-
-#equipo .foto3 {
-  background-image: url(./assets/img/images-12.jpg);
-}
-
-#equipo .foto4 {
-  background-image: url(./assets/img/images-3.jpg);
-}
-
-#equipo h3 {
-  font-weight: 700;
-  margin: 0;
-  font-size: 22px;
-}
-
-#equipo h4 {
-  font-weight: 600;
-  margin: 0;
-  font-size: 20px;
-}
-
-#equipo h5 {
-  font-weight: 600;
-  margin-top: 0 auto;
-  font-size: 14px;
-}
-
 /* formulario*/
 #formulario {
   width: 100%;
@@ -633,6 +174,473 @@ body {
   padding: 5px 10px;
   justify-content: center;
   font-size: 16px;
+}
+
+/* presentacion*/
+#presentacion {
+  margin: 0 auto;
+  display: flex;
+  background-color: #ecf9fc;
+  justify-content: center;
+}
+
+#presentacion .contenedor--presentacion {
+  margin: 60px 0;
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 20px;
+}
+
+#presentacion .contenedor--presentacion__imagen {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 950px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+}
+
+#presentacion .imagen2 {
+  background-image: url(../img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+#presentacion .contenedor--presentacion__textos {
+  margin: 0 auto;
+  display: flex;
+  background-color: none;
+  height: auto;
+}
+
+#presentacion .frase {
+  width: 600px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+  #presentacion .contenedor--presentacion .frase {
+    width: 90%;
+    align-items: center;
+  }
+}
+/* tabla datos doctores*/
+#capaDoctores {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+#capaDoctores h3 {
+  font-weight: 700;
+  color: navy;
+}
+
+/* equipo*/
+#equipo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f8fd;
+  justify-content: center;
+}
+
+.titulo {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.card--medico {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card--medico__item {
+  width: auto;
+  height: auto;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  overflow: hidden;
+}
+.card--medico__imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 12rem;
+  display: block;
+  flex-grow: 1;
+}
+.card--medico__texto {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  text-align: left;
+  padding: 15px;
+}
+
+#equipo .foto1 {
+  background-image: url(./assets/img/images-5.jpg);
+}
+
+#equipo .foto2 {
+  background-image: url(./assets/img/images-2.jpg);
+}
+
+#equipo .foto3 {
+  background-image: url(./assets/img/images-12.jpg);
+}
+
+#equipo .foto4 {
+  background-image: url(./assets/img/images-3.jpg);
+}
+
+#equipo h3 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 22px;
+}
+
+#equipo h4 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 20px;
+}
+
+#equipo h5 {
+  font-weight: 600;
+  margin-top: 0 auto;
+  font-size: 14px;
+}
+
+body {
+  background-color: #f9f8fd;
+}
+
+#header {
+  margin: 0 auto;
+  display: flex;
+  background-color: #ecf9fc;
+  justify-content: center;
+}
+
+.card--header__item {
+  margin: 60px 0;
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 20px;
+}
+
+.card--header__imagen {
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+  width: 450px;
+  background-color: none;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+}
+
+.imagen {
+  background-image: url(./assets/img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.card--header__textos {
+  margin: 0 auto;
+  display: flex;
+  background-color: none;
+  height: 23rem;
+  justify-content: center;
+}
+
+#header .frase {
+  padding: 20px;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 550px) {
+  #header .card--header__item, .card--header__textos,
+  #presentacion .contenedor--presentacion {
+    width: 90%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header .card--header__textos h1 {
+    width: 95%;
+    align-items: center;
+    font-size: 28px;
+  }
+}
+#misionvision {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+.mision--vision {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mision--vision__item {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  text-align: left;
+  padding: 20px;
+  background-color: navy;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+}
+.mision--vision__item h5 {
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f8fd;
+  justify-content: center;
+}
+
+.titulo {
+  margin: 60px 0;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 550px) {
+  #servicios .titulo, #testimonios .titulo, #equipo .titulo {
+    justify-content: center;
+  }
+}
+.ajuste--margen {
+  padding: 0 10px;
+}
+
+.card--servicio {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card--servicio__item {
+  width: auto;
+  height: auto;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  overflow: hidden;
+}
+.card--servicio__imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 14rem;
+  display: block;
+  flex-grow: 1;
+}
+.card--servicio__texto {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  text-align: left;
+  padding: 30px 20px;
+}
+.card--servicio__texto h2 {
+  font-weight: 700;
+  font-size: 26px;
+}
+.card--servicio__texto h5 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.foto1 {
+  background-image: url(./assets/img/istockphoto-1344792109-612x612.jpg);
+}
+
+.foto2 {
+  background-image: url(./assets/img/images.jpg);
+}
+
+.foto3 {
+  background-image: url(./assets/img/images-1.jpg);
+}
+
+#testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f8fd;
+  justify-content: center;
+}
+
+.card--testimonio {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card--testimonio__item {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 40px 0;
+}
+.card--testimonio__imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 210px;
+  display: block;
+  flex-grow: 1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card--testimonio__texto {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: snow;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  border-radius: 15px;
+  margin-bottom: 80px;
+}
+.card--testimonio__texto h2 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26px;
+}
+.card--testimonio__texto h6 {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+#testimonios .foto1 {
+  background-image: url(./assets/img/download-1.jpg);
+}
+
+#testimonios .foto2 {
+  background-image: url(./assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
+}
+
+#testimonios .foto3 {
+  background-image: url(./assets/img/download.jpg);
+}
+
+#testimonios .foto4 {
+  background-image: url(./assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
+}
+
+#piedepagina {
+  margin: 0 auto;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+}
+
+.piedepagina__menu {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.piedepagina__frase {
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 20px;
+}
+
+.piedepagina__frase li {
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 550px) {
+  #piedepagina {
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  #piedepagina .piedepagina__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
