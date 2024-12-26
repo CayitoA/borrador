@@ -1,0 +1,253 @@
+@import '../modulos/variables' ;
+
+//seccion header
+
+#header{
+    margin:$margin;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #ecf9fc;
+    justify-content: center;
+    padding: 0 35px;
+
+    .contenedor-header{
+    margin:$margin-header;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: 20px;    
+    }
+
+    .contenedor-imagen{
+    border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+    background-color: none;
+    box-shadow:$shadow;
+    transition: all 0.3s;
+    transition: 750ms;
+    }
+    
+    .contenedor-imagen .imagen1{
+    background-image: url(assets/img/csm_Header_image_video_1920x875_d698852eb1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    } 
+    .contenedor-imagen .imagen2{
+        background-image: url(assets/img/header-operacion.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30rem;
+        } 
+        .contenedor-imagen .imagen3{
+            background-image: url(assets/img/csm_KLS_Martin_Group_1920x875_05_063d8f5148.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 30rem;
+            } 
+    .contenedor-header .contenedor-textos{
+    margin:$margin;
+    display: flex;
+    background-color: none;
+    height: 23rem;
+    justify-content: center;
+    vertical-align: middle;
+    }
+    .frase{
+    width: 400px;
+    padding: 20px;
+    font-size: 36px;
+    color:$color2;
+    font-weight: 500;
+    vertical-align: middle;
+    }
+    .frase span{
+    width: 400px;
+    padding: 20px;
+    font-size: 36px;
+    color: #121212;
+    font-weight: 800;
+    }
+    .contenedor-imagen:hover{
+    transform: scale(1.02);
+    box-shadow:$shadow2;
+    }
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-15%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      97% { transform:translateY(0%); }
+      99% { transform:translateY(-3%); }
+      100% { transform:translateY(0); }
+  }
+  
+
+
+ 
+
+
+//seccion lineas de productos
+
+#productos {
+    background-color: $background1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+.titulo{ 
+    margin:$margin;
+    width: $width;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    color:$color2;
+    h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: $colortexto;
+    }
+}
+}
+
+#productos .margen{
+    padding: 0 10px;
+}   
+#productos .card-lineaproducto{
+    margin: $margin;
+    width: $width;
+    background-color: $colordcards;
+    border-radius: $border-2;
+
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+    box-shadow: $shadow;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#productos .card-lineaproducto:hover{
+    transform: scale(1.02);
+    box-shadow: $shadow2;
+}
+
+#productos  .contenedor-imagen .foto1{
+    background-image: url(assets/img/header_surgery__1920x875_07_4918feb183.jpeg);
+}
+#productos  .contenedor-imagen .foto2{
+    background-image: url(assets/img/header_IPS.jpg);
+}
+#productos  .contenedor-imagen .foto3{
+    background-image: url(assets/img/header_Neurosurgery_1920x875_03_42dc94b3c3.jpeg);
+}
+#productos  .contenedor-imagen .foto4{
+    background-image: url(assets/img/header-instrumental.jpg);
+}
+#productos  .contenedor-imagen .foto5{
+    background-image: url(assets/img/header_Hand_surgery_1920x875.jpeg);
+}
+
+#productos  .contenedor-imagen .foto6{
+    background-image: url(assets/img/index_contenedores.jpg);
+}
+#productos .imagen{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18rem;
+    display: block;
+    flex-grow: 1;
+    background-clip: content-box;
+    transition: 500ms; 
+}
+
+.contenedor-texto {
+    margin: $margin;
+    display: flex;
+    height: 18rem;
+ 
+.body-card{
+    background-color: none;
+    text-align: left;
+    padding: 20px 30px;
+    position: relative;
+    display: block;
+}
+}
+
+.card-lineaproducto .contenedor-texto span{
+    background-color:$color2;
+    padding: 3px 15px;
+    border-radius: 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Inter", sans-serif;
+
+}
+    .body-card h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 0;
+    }
+    .body-card h4{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    
+    #productos    .btn-productos{
+        background-color:$color1;
+        border-radius: 5px;
+        padding: 3px 12px;
+        box-shadow: $shadow;
+        border: none;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+      }
+
+      #productos    .btn-productos a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 800;
+        padding: 5px;
+        font-family: "Inter", sans-serif;
+
+      }
+      #productos .btn-productos:hover{
+          box-shadow: $shadow2;
+          background-color:$color3;
+          font-weight: 800;
+      }
+      #productos .flecha{
+          color: white;
+          padding-left: 10px;
+      }
+      

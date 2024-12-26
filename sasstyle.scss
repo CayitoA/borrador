@@ -1,0 +1,718 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+#barranavegacion {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  margin: 0;
+  background-color: red;
+}
+
+.nav-item a {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+#menu {
+  width: 90%;
+  max-width: 0 auto;
+  justify-content: space-between;
+  background-color: none;
+  padding: 0 40px;
+}
+
+.collapse {
+  justify-content: flex-end;
+  float: right;
+}
+
+#formulario {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #f9f8fd;
+  background-color: #f2f2f2;
+  background-color: #e8e8e8;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contenedor-formulario {
+  width: auto;
+  background-color: aliceblue;
+  border-radius: 12px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 90px 0;
+}
+
+.casilla {
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.form-label {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+footer {
+  justify-content: end;
+}
+
+#header {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #ecf9fc;
+  justify-content: center;
+  padding: 0 35px;
+}
+
+#header .contenedor-header {
+  margin: 90px 0;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 20px;
+}
+
+#header .contenedor-imagen {
+  border-radius: 20px;
+  overflow: hidden;
+  height: auto;
+  background-color: none;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  transition: 750ms;
+}
+
+#header .contenedor-imagen .imagen1 {
+  background-image: url(../assets/img/csm_Header_image_video_1920x875_d698852eb1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+#header .contenedor-imagen .imagen2 {
+  background-image: url(../assets/img/header-operacion.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+#header .contenedor-imagen .imagen3 {
+  background-image: url(../assets/img/csm_KLS_Martin_Group_1920x875_05_063d8f5148.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+#header .contenedor-header .contenedor-textos {
+  margin: 0 auto;
+  display: flex;
+  background-color: none;
+  height: 23rem;
+  justify-content: center;
+}
+
+#header .frase {
+  width: 400px;
+  padding: 20px;
+  font-size: 36px;
+  color: #474747;
+  font-weight: 500;
+}
+
+#header .frase span {
+  width: 400px;
+  padding: 20px;
+  font-size: 36px;
+  color: #121212;
+  font-weight: 800;
+}
+
+#header .contenedor-imagen:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+#presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f9f8fd;
+}
+
+#presentacion .contenedor-doble {
+  margin: 90px 0;
+  background-color: none;
+}
+
+#presentacion .contenedor-presentacion {
+  width: 950px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#presentacion .contenedor-imagen {
+  display: block;
+  justify-content: center;
+  background-color: none;
+}
+
+#presentacion .logo1 {
+  background-image: url(../assets/img/OST_nuevo\ logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 124px;
+  justify-content: center;
+}
+
+#presentacion .logo2 {
+  background-image: url(../assets/img/logo_klsmartin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+  justify-content: center;
+}
+
+#presentacion .contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  text-align: left;
+  padding: 30px;
+}
+
+#presentacion .contenedor-texto p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#ventajas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+#ventajas .contenedor-cardventanajas {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 1px;
+}
+
+#ventajas .card-ventaja {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  border-radius: 30px 10px;
+  background-color: #a6b5bb;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  align-content: center;
+  justify-content: center;
+}
+
+#ventajas h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+#ventajas .margen {
+  padding: 10px;
+}
+
+#ventajas .card-ventaja:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  background-color: #e20303;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#productos {
+  background-color: #f9f8fd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+#productos .titulo {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  color: #474747;
+}
+
+#productos .titulo h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#productos .margen {
+  padding: 0 10px;
+}
+
+#productos .card-lineaproducto {
+  margin: 0 auto;
+  width: 950px;
+  background-color: #e8e8e8;
+  border-radius: 30px 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+#productos .card-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+#productos .contenedor-imagen .foto1 {
+  background-image: url(../assets/img/csm_CMF_surgery__1920x875_07_4918feb183.jpeg);
+}
+
+#productos .contenedor-imagen .foto2 {
+  background-image: url(../assets/img/csm_Neurosurgery_1920x875_03_42dc94b3c3.jpeg);
+}
+
+#productos .contenedor-imagen .foto3 {
+  background-image: url(../assets/img/header-instrumental.jpg);
+}
+
+#productos .contenedor-imagen .foto4 {
+  background-image: url(../assets/img/header_implante_manos\ 2.jpg);
+}
+
+#productos .contenedor-imagen .foto5 {
+  background-image: url(../assets/img/header-instrumental.jpg);
+}
+
+#productos .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 18rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+
+.contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  height: 18rem;
+}
+
+.contenedor-texto .body-card {
+  background-color: none;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.card-lineaproducto .contenedor-texto span {
+  background-color: #474747;
+  padding: 3px 15px;
+  border-radius: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.body-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.body-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#productos footer {
+  padding-top: 20px;
+}
+
+#productos .btn-productos {
+  background-color: #e20303;
+  border-radius: 5px;
+  padding: 3px 12px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  border: none;
+  float: right;
+  position: absolute;
+  bottom: auto;
+}
+
+#productos .btn-productos a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px;
+}
+
+#productos .btn-productos:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  background-color: #ca0000;
+  font-weight: 800;
+}
+
+#productos .flecha {
+  color: white;
+  padding-left: 10px;
+}
+
+#headerlinea {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 0 15px;
+  background-color: #ecf9fc;
+}
+
+#headerlinea .header-lineaproducto {
+  width: 950px;
+  background-color: #3c4141;
+  background-color: #a9a9a9;
+  background-color: #e8e8e8;
+  border-radius: 50px 20px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  overflow: hidden;
+}
+
+#headerlinea .header-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  transition: 750ms;
+}
+
+#headerlinea .contenedor-imagen .foto1 {
+  background-image: url(../assets/img/header_implante_manos.jpg);
+}
+
+#headerlinea .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 22rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+
+#headerlinea .imagen:hover {
+  scale: 105%;
+  transition: 500ms;
+}
+
+#headerlinea .contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  height: 22rem;
+  align-items: center;
+}
+
+#headerlinea .body-card {
+  background-color: none;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+#headerlinea .header-lineaproducto .contenedor-texto span {
+  background-color: #474747;
+  padding: 3px 15px;
+  border-radius: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+#headerlinea .body-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 15px 0;
+  color: white;
+  color: #4d4d4d;
+}
+
+#linea1productos {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f8fd;
+  justify-content: center;
+}
+
+#linea1productos .titulo {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  padding: 0 15px;
+}
+
+#linea1productos .titulo h1 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #474747;
+}
+
+#linea1productos .titulo h1 span {
+  font-weight: 800;
+  color: #121212;
+}
+
+#linea1productos .contenedor-card {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px 0;
+}
+
+#linea1productos .card-lineaproducto {
+  margin: 0 auto;
+  height: auto;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+#linea1productos .margen {
+  padding: 15px;
+}
+
+#linea1productos .contenedor-imagen .foto1 {
+  background-image: url(../assets/img/csm_LevelOne_instruments_735x370_efa8bdc60f.jpg);
+}
+
+#linea1productos .contenedor-imagen .foto2 {
+  background-image: url(../assets/img/csm_LevelOne_plates_and_meshes_735x370_01_8ed5c334df.jpg);
+}
+
+#linea1productos .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 14rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+
+#linea1productos .imagen:hover {
+  scale: 110%;
+}
+
+#linea1productos .contenedor-texto {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 14rem;
+}
+
+#linea1productos .body-card {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+}
+
+#linea1productos .body-card h6 {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#linea1productos .body-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+#linea1productos .body-card h4 {
+  font-size: 20px;
+  font-size: 500;
+}
+
+#linea1productos footer {
+  justify-content: end;
+  bottom: 40px;
+}
+
+#linea1productos .card-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+#linea1productos .btn-producto {
+  background-color: #e20303;
+  border-radius: 5px;
+  padding: 3px 12px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  float: right;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  position: relative;
+  bottom: 0px;
+}
+
+#linea1productos .btn-producto:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  background-color: #ca0000;
+}
+
+#linea1productos footer {
+  padding-top: 20px;
+}
+
+/* catalogo*/
+#catalogo {
+  background-color: #e20303;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+#catalogo .contenedor-catalogo {
+  margin: 0 auto;
+  width: 950px;
+  height: 5rem;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+#catalogo h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+}
+
+#catalogo .icono-descarga {
+  background-image: url(../assets/img/icono-descarga.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 63px;
+  height: 80px;
+}
+
+

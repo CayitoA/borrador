@@ -1,0 +1,132 @@
+@import '../modulos/variables' ;
+
+.float-wa{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+
+
+//seccion ventas
+
+#nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:$background1;
+    padding: 60px 0;
+
+.contenedor-presentacion{
+    width: $width;
+    margin: $margin;
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:0 20px;
+    }
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    height: 12rem;
+    align-items: center;
+
+}    
+     
+.logo1{
+    background-image: url(assets/img/OST_nuevo\ logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 93px;
+
+    justify-content: center;
+    }
+
+.contenedor-texto {
+    margin:$margin;
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    text-align: left;
+    padding: 30px;
+    justify-content: center;
+    }
+
+    .contenedor-texto h2{
+        font-weight: 800;
+        font-size: 24px;
+        color: $colortexto;
+    }
+.contenedor-texto p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    }
+                
+}
+
+//seccion ventas
+
+#formulario{
+    margin: $margin;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color:$background1;
+    background-color: #f2f2f2;
+    background-color: $colordcards;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(assets/img/csm_Innovation_1920x875_04_edc56db414.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+    .contenedor-formulario{
+        width: auto;
+        background-color:aliceblue;
+        border-radius: 12px;
+        padding: 20px;
+        justify-content: center;
+        margin: 100px 0;
+        }
+
+
+
+    .titulo{
+        font-size: 36px;
+        font-weight: 700;
+        margin: $margin-header;
+    }
+
+.casilla{
+padding: 10px 0;
+justify-content: center;
+}
+    .form-label{
+        font-size: 22px;
+        font-weight: 600;
+    }
+footer{
+    justify-content: end;
+}

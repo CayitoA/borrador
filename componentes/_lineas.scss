@@ -1,0 +1,416 @@
+@import '../modulos/variables' ;
+
+
+//btn contacto
+.btn-w{
+  position: absolute;
+  bottom: 20px; /* Espacio desde el fondo */
+  right: 20px; /* Espacio desde la derecha */
+  background-color: #25D366; /* Color verde de WhatsApp */
+  color: white; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-w:hover{
+  background-color: #128C7E;
+}
+
+
+//header linea 1
+
+#headerlinea {
+    display: flex;
+    margin: $margin;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: #ecf9fc;
+
+     .header-lineaproducto{
+        width: $width;
+        background-color: #3c4141;
+        background-color: #474747;
+        background-color: $colordcards;
+        background-color: #c0c0c0;
+        border-radius: $border-1;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: $margin-header;
+        box-shadow: $shadow;
+        overflow: hidden;
+    }
+    
+    .header-lineaproducto:hover{
+        transform: scale(1.02);
+        box-shadow: $shadow2;
+        transition: 750ms;
+    }
+
+    .contenedor-imagen .foto1{
+        background-image: url(assets/img/header_surgery__1920x875_07_4918feb183.jpeg);
+    }
+    .contenedor-imagen .foto2{
+        background-image: url(assets/img/header_IPS.jpg);
+    }
+    .contenedor-imagen .foto3{
+        background-image: url(assets/img/header_Neurosurgery_1920x875_03_42dc94b3c3.jpeg);
+    }
+    .contenedor-imagen .foto4{
+        background-image: url(assets/img/header-instrumental.jpg);
+    }
+    .contenedor-imagen .foto5{
+        background-image: url(assets/img/header_Hand_surgery_1920x875.jpeg);
+    }
+    .contenedor-imagen .foto6{
+        background-image: url(assets/img/header_contenedores.jpg);
+    }
+    .contenedor-imagen .foto7{
+        background-image: url(assets/img/csm_Innovation_1920x875_04_edc56db414.jpeg);
+    }
+    .imagen{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 22rem;
+        display: block;
+        flex-grow: 1;
+        background-clip: content-box;
+        transition: 500ms; 
+    }
+    
+    .imagen:hover{
+        scale: 105%;
+        transition: 500ms;
+    }
+    .contenedor-texto {
+        margin: $margin;
+        display: flex;
+        height: 22rem;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    .body-card{
+        background-color: none;
+        text-align: left;
+        padding: 20px 30px;
+    }
+
+.header-lineaproducto .contenedor-texto span{
+    background-color:$color2;
+    padding: 3px 15px;
+    border-radius: 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+    .body-card h2{
+    font-size: 26px;
+    font-weight: 700;
+    padding: 15px 0;
+    color: white;
+    color: #4d4d4d;
+    }
+    }
+    
+//linea de productos
+
+#linea1productos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$background1;
+    justify-content: center;
+    .titulo{
+        margin:$margin;
+        width: $width;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: 90px;
+        padding: 0 15px;
+            h1{
+            font-size: 34px;
+            font-weight: 500;
+            color: $color2;
+            }
+            h1 span{
+            font-weight: 800;
+            color: #121212;
+            }
+    }
+    
+    .contenedor-card{
+        width: $width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:$margin-header;
+    }
+    .card-lineaproducto{
+        margin: $margin;
+        height: auto;
+        background-color: snow;
+        background-color: $colordcards;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 12px;
+        box-shadow:$shadow;
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+    .margen{
+        padding: 15px;
+    }
+  
+//fotos productos craneo-maxilofacial
+.contenedor-imagen .foto-c1{
+    background-image: url(assets/img/1-0.jpg);
+  }
+  .contenedor-imagen .foto-c2{
+    background-image: url(assets/img/1-5.jpg);
+  }
+  .contenedor-imagen .foto-c3{
+    background-image: url(assets/img/2-0.jpg);
+  }
+  .contenedor-imagen .foto-c4{
+    background-image: url(assets/img/midface.jpg);
+  }
+  .contenedor-imagen .foto-c5{
+    background-image: url(assets/img/orbital.jpg);
+  }
+  .contenedor-imagen .foto-c6{
+    background-image: url(assets/img/2-3.jpg);
+  }
+  .contenedor-imagen .foto-c7{
+    background-image: url(assets/img/2-7.jpg);
+  }
+  .contenedor-imagen .foto-c8{
+    background-image: url(assets/img/csm_Zurich_distractor_1920x495_04_9b583b4f71.jpeg);
+  }
+//fotos productos IPS
+.contenedor-imagen .foto-ip1{
+  background-image: url(assets/img/csm_IPS_Implants_TMJ_Prosthesis_Prothese_Header735x413_62df9abb1f.jpeg);
+}
+.contenedor-imagen .foto-ip2{
+  background-image: url(assets/img/csm_IPS_preprosthetic_735x370_02_f6e33ca063.jpeg);
+}
+.contenedor-imagen .foto-ip3{
+  background-image: url(assets/img/csm_IPS_Orthognathics_735x370_05_25b4218c3f.jpeg);
+}
+.contenedor-imagen .foto-ip4{
+  background-image: url(assets/img/csm_IPS_mandible_735x370_08_9d68393986.jpeg);
+}
+.contenedor-imagen .foto-ip5{
+  background-image: url(assets/img/csm_IPS_Implants_Cranium_735x370_ec260e133b.jpeg);
+}
+.contenedor-imagen .foto-ip6{
+  background-image: url(assets/img/csm_IPS_midface_735x370_02_82e5935b71.jpeg);
+}
+.contenedor-imagen .foto-ip7{
+  background-image: url(assets/img/csm_IPS_Implants_Transformation_735x370_215e84d90d.jpeg);
+}
+.contenedor-imagen .foto-ip8{
+  background-image: url(assets/img/csm_App_distraktor_right_transparent_IPSDistraction_735x370px_02_36ebe030aa.jpeg);
+}
+.contenedor-imagen .foto-ip9{
+  background-image: url(assets/img/csm_IPS_CaseDesigner_920x480px_d71e7e089a.jpeg);
+}
+
+//fotos productos neurocirugia
+.contenedor-imagen .foto-n1{
+    background-image: url(assets/img/csm_Resorbable_osteosynthesis_SonicWeld_Rx_735x370_18_d1202b1a60.jpeg);
+  }
+  .contenedor-imagen .foto-n2{
+    background-image: url(assets/img/csm_Level_One_Flap_Fix_Kit_Kranium_03_76395de21b.jpeg);
+  }
+  .contenedor-imagen .foto-n3{
+    background-image: url(assets/img/csm_Level_One_SAM_Kranium_04_342e49bd1c.jpeg);
+  }
+
+  //fotos productos instrumental
+.contenedor-imagen .foto-i1{
+    background-image: url(assets/img/L1_MI_Orthognathics_Instruments_1200x610.jpeg);
+  }
+  .contenedor-imagen .foto-i2{
+    background-image: url(assets/img/csm_Surgical_instruments_CMF_surgery_735x370_18_e8c1bd5a8b.jpeg);
+  }
+  .contenedor-imagen .foto-i3{
+    background-image: url(assets/img/csm_Neurosurgery_Instruments_general_04_065c0bdc4f.jpeg);
+  }
+  .contenedor-imagen .foto-i4{
+    background-image: url(assets/img/csm_Surgical_instruments_dental_and_oral_surgery_1920x495_03_3d0327831e.jpeg);
+  }
+  .contenedor-imagen .foto-i5{
+    background-image: url(assets/img/csm_Surgical_instruments_hand_surgery_735x370_07_83ea647f3d.jpg);
+  }
+  .contenedor-imagen .foto-i6{
+    background-image: url(assets/img/csm_Neurosurgery_Instruments_Rongeurs_title.jpg);
+  }
+//fotos productos manos
+    .contenedor-imagen .foto-m1{
+        background-image: url(assets/img/csm_Implants_hand_plates_and_screws_Linos_1920x495px_79fb53cc40.jpg);
+      }
+      .contenedor-imagen .foto-m2{
+        background-image: url(assets/img/csm_Implants_hand_Ixos_1920x495px_def7dd3f3b.jpg);
+      }
+      .contenedor-imagen .foto-m3{
+        background-image: url(assets/img/csm_Implants_hand_HBS2_1920x_495px_54a3a88a82.jpg);
+      }
+//fotos productos contenedores
+.contenedor-imagen .foto-co1{
+  background-image: url(assets/img/contenedor_hermannmuller.jpg);
+}
+
+
+
+
+
+    .imagen{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 14rem;
+        display: block;
+        flex-grow: 1;
+        background-clip: content-box;
+        transition: 500ms; 
+    }
+    .imagen:hover{
+        scale: 110%;
+       }
+    .contenedor-texto {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 14rem;
+        }
+     
+    .body-card{
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        display: block;
+        position: relative;
+
+        h6{
+            font-size: 14px;
+            font-weight: 800;
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 700;
+            padding: 10px 0;
+        }
+        h4 {
+            font-size: 20px;
+            font-size: 500;
+        }
+        }
+     
+        footer {
+        justify-content: end;    
+    bottom: 40px;
+    
+    }
+    .card-lineaproducto:hover{
+        transform: scale(1.02);
+        box-shadow: $shadow2;
+        }
+    .btn-producto{
+        background-color: $color1;
+        border-radius: 5px;
+        padding: 3px 12px;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        float: right;
+        box-shadow: $shadow;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        }
+
+    .btn-producto:hover{
+        box-shadow: $shadow2;
+        background-color: $color3;
+        }
+    footer{
+        padding-top: 20px;
+        }
+      
+    }
+
+    #exampleModal1 .modal-m1 {
+      background-image: url(assets/img/csm_Implants_hand_plates_and_screws_Linos_1920x495px_79fb53cc40.jpg);
+    }
+
+    #exampleModal2 .modal-m2 {
+      background-image: url(assets/img/csm_Implants_hand_Ixos_1920x495px_def7dd3f3b.jpg);  
+    }
+
+    #exampleModal3 .modal-m3 {
+      background-image: url(assets/img/csm_Implants_hand_HBS2_1920x_495px_54a3a88a82.jpg);
+    }
+
+
+
+     .modal-producto {
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 16rem;
+        transition: 500ms; 
+
+    }
+
+
+
+
+  /* catalogo*/
+#catalogo{
+    background-color:$color1;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    .contenedor-catalogo{
+    margin: $margin;
+    width: $width;
+    height: 5rem;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    }
+    h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px;
+    }
+    .icono-descarga{
+    background-image: url(assets/img/icono-descarga.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 63px;
+    height: 80px;
+    }
+    }
+

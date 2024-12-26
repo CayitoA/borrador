@@ -1,0 +1,876 @@
+@charset "UTF-8";
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+#barranavegacion {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background-color: none;
+}
+
+#menu {
+  width: 90%;
+  height: 5rem;
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+#menu ul li {
+  display: flex;
+  background-color: none;
+}
+
+#menu .logo {
+  padding: 0 20px;
+}
+
+#menu ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+
+/* footer*/
+#piedepagina {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 50px 0;
+}
+
+#piedepagina .menu {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#piedepagina .logo {
+  background-image: url(assets/img/OST_nuevo\ logo_blanco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 74px;
+  justify-content: center;
+  align-items: center;
+}
+
+#piedepagina .frase {
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a4a4a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#piedepagina ul {
+  list-style: none;
+}
+
+#piedepagina ul li .icono {
+  width: 25px;
+  height: auto;
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+#piedepagina .icono2 {
+  margin-left: 25px;
+}
+
+#piedepagina ul li .icono3 {
+  width: 35px;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  padding-right: 30px;
+}
+
+#piedepagina ul li {
+  align-items: center;
+  justify-items: center;
+}
+
+#header {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #ecf9fc;
+  justify-content: center;
+  padding: 0 35px;
+}
+#header .contenedor-header {
+  margin: 90px 0;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 20px;
+}
+#header .contenedor-imagen {
+  border-radius: 20px;
+  overflow: hidden;
+  height: auto;
+  background-color: none;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  transition: 750ms;
+}
+#header .contenedor-imagen .imagen1 {
+  background-image: url(assets/img/csm_Header_image_video_1920x875_d698852eb1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+#header .contenedor-imagen .imagen2 {
+  background-image: url(assets/img/header-operacion.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+#header .contenedor-imagen .imagen3 {
+  background-image: url(assets/img/csm_KLS_Martin_Group_1920x875_05_063d8f5148.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+#header .contenedor-header .contenedor-textos {
+  margin: 0 auto;
+  display: flex;
+  background-color: none;
+  height: 23rem;
+  justify-content: center;
+  vertical-align: middle;
+}
+#header .frase {
+  width: 400px;
+  padding: 20px;
+  font-size: 36px;
+  color: #474747;
+  font-weight: 500;
+  vertical-align: middle;
+}
+#header .frase span {
+  width: 400px;
+  padding: 20px;
+  font-size: 36px;
+  color: #121212;
+  font-weight: 800;
+}
+#header .contenedor-imagen:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#productos {
+  background-color: #f9f8fd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+#productos .titulo {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  color: #474747;
+}
+#productos .titulo h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+#productos .margen {
+  padding: 0 10px;
+}
+
+#productos .card-lineaproducto {
+  margin: 0 auto;
+  width: 950px;
+  background-color: #e8e8e8;
+  border-radius: 30px 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+#productos .card-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+
+#productos .contenedor-imagen .foto1 {
+  background-image: url(assets/img/header_surgery__1920x875_07_4918feb183.jpeg);
+}
+
+#productos .contenedor-imagen .foto2 {
+  background-image: url(assets/img/header_IPS.jpg);
+}
+
+#productos .contenedor-imagen .foto3 {
+  background-image: url(assets/img/header_Neurosurgery_1920x875_03_42dc94b3c3.jpeg);
+}
+
+#productos .contenedor-imagen .foto4 {
+  background-image: url(assets/img/header-instrumental.jpg);
+}
+
+#productos .contenedor-imagen .foto5 {
+  background-image: url(assets/img/header_Hand_surgery_1920x875.jpeg);
+}
+
+#productos .contenedor-imagen .foto6 {
+  background-image: url(assets/img/index_contenedores.jpg);
+}
+
+#productos .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 18rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+
+.contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  height: 18rem;
+}
+.contenedor-texto .body-card {
+  background-color: none;
+  text-align: left;
+  padding: 20px 30px;
+  position: relative;
+  display: block;
+}
+
+.card-lineaproducto .contenedor-texto span {
+  background-color: #474747;
+  padding: 3px 15px;
+  border-radius: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.body-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.body-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#productos .btn-productos {
+  background-color: #e20303;
+  border-radius: 5px;
+  padding: 3px 12px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  border: none;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#productos .btn-productos a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+#productos .btn-productos:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  background-color: #ca0000;
+  font-weight: 800;
+}
+
+#productos .flecha {
+  color: white;
+  padding-left: 10px;
+}
+
+.btn-w {
+  position: absolute;
+  bottom: 20px; /* Espacio desde el fondo */
+  right: 20px; /* Espacio desde la derecha */
+  background-color: #25D366; /* Color verde de WhatsApp */
+  color: white; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-w:hover {
+  background-color: #128C7E;
+}
+
+#headerlinea {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 0 15px;
+  background-color: #ecf9fc;
+}
+#headerlinea .header-lineaproducto {
+  width: 950px;
+  background-color: #3c4141;
+  background-color: #474747;
+  background-color: #e8e8e8;
+  background-color: #c0c0c0;
+  border-radius: 50px 20px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px 0;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  overflow: hidden;
+}
+#headerlinea .header-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  transition: 750ms;
+}
+#headerlinea .contenedor-imagen .foto1 {
+  background-image: url(assets/img/header_surgery__1920x875_07_4918feb183.jpeg);
+}
+#headerlinea .contenedor-imagen .foto2 {
+  background-image: url(assets/img/header_IPS.jpg);
+}
+#headerlinea .contenedor-imagen .foto3 {
+  background-image: url(assets/img/header_Neurosurgery_1920x875_03_42dc94b3c3.jpeg);
+}
+#headerlinea .contenedor-imagen .foto4 {
+  background-image: url(assets/img/header-instrumental.jpg);
+}
+#headerlinea .contenedor-imagen .foto5 {
+  background-image: url(assets/img/header_Hand_surgery_1920x875.jpeg);
+}
+#headerlinea .contenedor-imagen .foto6 {
+  background-image: url(assets/img/header_contenedores.jpg);
+}
+#headerlinea .contenedor-imagen .foto7 {
+  background-image: url(assets/img/csm_Innovation_1920x875_04_edc56db414.jpeg);
+}
+#headerlinea .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 22rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+#headerlinea .imagen:hover {
+  scale: 105%;
+  transition: 500ms;
+}
+#headerlinea .contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  height: 22rem;
+  align-items: center;
+  justify-content: center;
+}
+#headerlinea .body-card {
+  background-color: none;
+  text-align: left;
+  padding: 20px 30px;
+}
+#headerlinea .header-lineaproducto .contenedor-texto span {
+  background-color: #474747;
+  padding: 3px 15px;
+  border-radius: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+#headerlinea .body-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 15px 0;
+  color: white;
+  color: #4d4d4d;
+}
+
+#linea1productos {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f8fd;
+  justify-content: center;
+}
+#linea1productos .titulo {
+  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  padding: 0 15px;
+}
+#linea1productos .titulo h1 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #474747;
+}
+#linea1productos .titulo h1 span {
+  font-weight: 800;
+  color: #121212;
+}
+#linea1productos .contenedor-card {
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px 0;
+}
+#linea1productos .card-lineaproducto {
+  margin: 0 auto;
+  height: auto;
+  background-color: snow;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+#linea1productos .margen {
+  padding: 15px;
+}
+#linea1productos .contenedor-imagen .foto-c1 {
+  background-image: url(assets/img/1-0.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c2 {
+  background-image: url(assets/img/1-5.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c3 {
+  background-image: url(assets/img/2-0.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c4 {
+  background-image: url(assets/img/midface.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c5 {
+  background-image: url(assets/img/orbital.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c6 {
+  background-image: url(assets/img/2-3.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c7 {
+  background-image: url(assets/img/2-7.jpg);
+}
+#linea1productos .contenedor-imagen .foto-c8 {
+  background-image: url(assets/img/csm_Zurich_distractor_1920x495_04_9b583b4f71.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip1 {
+  background-image: url(assets/img/csm_IPS_Implants_TMJ_Prosthesis_Prothese_Header735x413_62df9abb1f.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip2 {
+  background-image: url(assets/img/csm_IPS_preprosthetic_735x370_02_f6e33ca063.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip3 {
+  background-image: url(assets/img/csm_IPS_Orthognathics_735x370_05_25b4218c3f.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip4 {
+  background-image: url(assets/img/csm_IPS_mandible_735x370_08_9d68393986.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip5 {
+  background-image: url(assets/img/csm_IPS_Implants_Cranium_735x370_ec260e133b.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip6 {
+  background-image: url(assets/img/csm_IPS_midface_735x370_02_82e5935b71.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip7 {
+  background-image: url(assets/img/csm_IPS_Implants_Transformation_735x370_215e84d90d.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip8 {
+  background-image: url(assets/img/csm_App_distraktor_right_transparent_IPSDistraction_735x370px_02_36ebe030aa.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-ip9 {
+  background-image: url(assets/img/csm_IPS_CaseDesigner_920x480px_d71e7e089a.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-n1 {
+  background-image: url(assets/img/csm_Resorbable_osteosynthesis_SonicWeld_Rx_735x370_18_d1202b1a60.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-n2 {
+  background-image: url(assets/img/csm_Level_One_Flap_Fix_Kit_Kranium_03_76395de21b.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-n3 {
+  background-image: url(assets/img/csm_Level_One_SAM_Kranium_04_342e49bd1c.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-i1 {
+  background-image: url(assets/img/L1_MI_Orthognathics_Instruments_1200x610.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-i2 {
+  background-image: url(assets/img/csm_Surgical_instruments_CMF_surgery_735x370_18_e8c1bd5a8b.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-i3 {
+  background-image: url(assets/img/csm_Neurosurgery_Instruments_general_04_065c0bdc4f.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-i4 {
+  background-image: url(assets/img/csm_Surgical_instruments_dental_and_oral_surgery_1920x495_03_3d0327831e.jpeg);
+}
+#linea1productos .contenedor-imagen .foto-i5 {
+  background-image: url(assets/img/csm_Surgical_instruments_hand_surgery_735x370_07_83ea647f3d.jpg);
+}
+#linea1productos .contenedor-imagen .foto-i6 {
+  background-image: url(assets/img/csm_Neurosurgery_Instruments_Rongeurs_title.jpg);
+}
+#linea1productos .contenedor-imagen .foto-m1 {
+  background-image: url(assets/img/csm_Implants_hand_plates_and_screws_Linos_1920x495px_79fb53cc40.jpg);
+}
+#linea1productos .contenedor-imagen .foto-m2 {
+  background-image: url(assets/img/csm_Implants_hand_Ixos_1920x495px_def7dd3f3b.jpg);
+}
+#linea1productos .contenedor-imagen .foto-m3 {
+  background-image: url(assets/img/csm_Implants_hand_HBS2_1920x_495px_54a3a88a82.jpg);
+}
+#linea1productos .contenedor-imagen .foto-co1 {
+  background-image: url(assets/img/contenedor_hermannmuller.jpg);
+}
+#linea1productos .imagen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 14rem;
+  display: block;
+  flex-grow: 1;
+  background-clip: content-box;
+  transition: 500ms;
+}
+#linea1productos .imagen:hover {
+  scale: 110%;
+}
+#linea1productos .contenedor-texto {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 14rem;
+}
+#linea1productos .body-card {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  display: block;
+  position: relative;
+}
+#linea1productos .body-card h6 {
+  font-size: 14px;
+  font-weight: 800;
+}
+#linea1productos .body-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+#linea1productos .body-card h4 {
+  font-size: 20px;
+  font-size: 500;
+}
+#linea1productos footer {
+  justify-content: end;
+  bottom: 40px;
+}
+#linea1productos .card-lineaproducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+}
+#linea1productos .btn-producto {
+  background-color: #e20303;
+  border-radius: 5px;
+  padding: 3px 12px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  float: right;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.0666666667);
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+#linea1productos .btn-producto:hover {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3333333333);
+  background-color: #ca0000;
+}
+#linea1productos footer {
+  padding-top: 20px;
+}
+
+#exampleModal1 .modal-m1 {
+  background-image: url(assets/img/csm_Implants_hand_plates_and_screws_Linos_1920x495px_79fb53cc40.jpg);
+}
+
+#exampleModal2 .modal-m2 {
+  background-image: url(assets/img/csm_Implants_hand_Ixos_1920x495px_def7dd3f3b.jpg);
+}
+
+#exampleModal3 .modal-m3 {
+  background-image: url(assets/img/csm_Implants_hand_HBS2_1920x_495px_54a3a88a82.jpg);
+}
+
+.modal-producto {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 16rem;
+  transition: 500ms;
+}
+
+/* catalogo*/
+#catalogo {
+  background-color: #e20303;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+#catalogo .contenedor-catalogo {
+  margin: 0 auto;
+  width: 950px;
+  height: 5rem;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+#catalogo h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+}
+#catalogo .icono-descarga {
+  background-image: url(assets/img/icono-descarga.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 63px;
+  height: 80px;
+}
+
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+#nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f9f8fd;
+  padding: 60px 0;
+}
+#nosotros .contenedor-presentacion {
+  width: 950px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+#nosotros .contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  background-color: none;
+  height: 12rem;
+  align-items: center;
+}
+#nosotros .logo1 {
+  background-image: url(assets/img/OST_nuevo\ logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 93px;
+  justify-content: center;
+}
+#nosotros .contenedor-texto {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  text-align: left;
+  padding: 30px;
+  justify-content: center;
+}
+#nosotros .contenedor-texto h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #4d4d4d;
+}
+#nosotros .contenedor-texto p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#formulario {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #f9f8fd;
+  background-color: #f2f2f2;
+  background-color: #e8e8e8;
+  justify-content: center;
+  padding: 20px;
+  background-image: url(assets/img/csm_Innovation_1920x875_04_edc56db414.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedor-formulario {
+  width: auto;
+  background-color: aliceblue;
+  border-radius: 12px;
+  padding: 20px;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 90px 0;
+}
+
+.casilla {
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.form-label {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+footer {
+  justify-content: end;
+}
+
+/*# sourceMappingURL=style.css.map */

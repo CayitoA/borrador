@@ -1,9 +1,11 @@
-// base todo el sitio variables y tipografia
-@use './variables';
+@import '../modulos/variables' ;
 
-  *{
+*{
     font-family: "Inter", sans-serif;
    
   }
   
- 
+  body {
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
