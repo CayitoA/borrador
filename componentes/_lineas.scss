@@ -273,6 +273,10 @@
 }
 
 
+.contenedor-imagen{
+  display: block;
+  position: relative;
+}
 
 
 
@@ -281,11 +285,22 @@
         background-position: center;
         background-size: cover;
         height: 14rem;
-        display: block;
         flex-grow: 1;
         background-clip: content-box;
         transition: 500ms; 
     }
+
+
+
+  .imagen .btn{
+    background-color: $color2;
+    background-color: #c0c0c0;
+    border: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+  }
     .imagen:hover{
         scale: 110%;
        }
@@ -354,6 +369,111 @@
       
     }
 
+    /* modal detalle producto*/
+        /* modal linea1*/
+
+    #exampleModalc1 .modal-c1 {
+      background-image: url(assets/img/1-0.jpg);
+    }
+
+    #exampleModalc2 .modal-c2 {
+      background-image: url(assets/img/1-5.jpg);
+    }
+
+    #exampleModalc3 .modal-c3 {
+      background-image: url(assets/img/2-0.jpg);
+    }
+
+    #exampleModalc4 .modal-c4 {
+      background-image: url(assets/img/midface.jpg);
+    }
+
+    #exampleModalc5 .modal-c5 {
+      background-image: url(assets/img/orbital.jpg);
+    }
+
+    #exampleModalc6 .modal-c6 {
+      background-image: url(assets/img/2-3.jpg);
+    }
+
+    #exampleModalc7 .modal-c7 {
+      background-image: url(assets/img/2-7.jpg);
+    }
+
+    #exampleModalc8 .modal-c8 {
+      background-image: url(assets/img/csm_Zurich_distractor_1920x495_04_9b583b4f71.jpeg);
+    }
+   
+      /* modal linea2*/
+      #exampleModalip1 .modal-ip1 {
+        background-image: url(assets/img/csm_IPS_Implants_TMJ_Prosthesis_Prothese_Header735x413_62df9abb1f.jpeg);
+      }
+  
+      #exampleModalip2 .modal-ip2 {
+        background-image: url(assets/img/csm_IPS_preprosthetic_735x370_02_f6e33ca063.jpeg);
+      }
+  
+      #exampleModalip3 .modal-ip3 {
+        background-image: url(assets/img/csm_IPS_Orthognathics_735x370_05_25b4218c3f.jpeg);
+      }
+  
+
+   
+      #exampleModalip4 .modal-ip4 {
+        background-image: url(assets/img/csm_IPS_mandible_735x370_08_9d68393986.jpeg);
+      }
+  
+      #exampleModalip5 .modal-ip5 {
+        background-image: url(assets/img/csm_IPS_Implants_Cranium_735x370_ec260e133b.jpeg);
+      }
+  
+      #exampleModalip6 .modal-ip6 {
+        background-image: url(assets/img/csm_IPS_midface_735x370_02_82e5935b71.jpeg);
+      }
+  
+      #exampleModalip7 .modal-ip7 {
+        background-image: url(assets/img/csm_IPS_Implants_Transformation_735x370_215e84d90d.jpeg);
+      }
+  
+      #exampleModalip8 .modal-ip8 {
+        background-image: url(assets/img/csm_App_distraktor_right_transparent_IPSDistraction_735x370px_02_36ebe030aa.jpeg);
+      }
+      #exampleModalip9 .modal-ip9 {
+        background-image: url(assets/img/csm_IPS_CaseDesigner_920x480px_d71e7e089a.jpeg);
+      }
+
+     /* modal linea3*/
+    #exampleModaln1 .modal-n1 {
+      background-image: url(assets/img/csm_Resorbable_osteosynthesis_SonicWeld_Rx_735x370_18_d1202b1a60.jpeg);
+    }
+    #exampleModaln2 .modal-n2 {
+      background-image: url(assets/img/csm_Level_One_Flap_Fix_Kit_Kranium_03_76395de21b.jpeg);
+    }
+    #exampleModaln3 .modal-n3 {
+      background-image: url(assets/img/csm_Level_One_SAM_Kranium_04_342e49bd1c.jpeg);
+    }
+  /* modal linea4*/
+  #exampleModali1 .modal-i1 {
+    background-image: url(assets/img/L1_MI_Orthognathics_Instruments_1200x610.jpeg);
+  }
+  #exampleModali2 .modal-i2 {
+    background-image: url(assets/img/csm_Surgical_instruments_CMF_surgery_735x370_18_e8c1bd5a8b.jpeg);
+  }
+  #exampleModali3 .modal-i3 {
+    background-image: url(assets/img/csm_Neurosurgery_Instruments_general_04_065c0bdc4f.jpeg);
+  }
+  #exampleModali4 .modal-i4 {
+    background-image: url(assets/img/csm_Surgical_instruments_dental_and_oral_surgery_1920x495_03_3d0327831e.jpeg);
+  }
+  #exampleModali5 .modal-i5 {
+    background-image: url(assets/img/csm_Surgical_instruments_hand_surgery_735x370_07_83ea647f3d.jpg);
+  }
+  #exampleModali6 .modal-i6 {
+    background-image: url(assets/img/csm_Neurosurgery_Instruments_Rongeurs_title.jpg);
+  } 
+
+
+   /* modal linea5*/
     #exampleModal1 .modal-m1 {
       background-image: url(assets/img/csm_Implants_hand_plates_and_screws_Linos_1920x495px_79fb53cc40.jpg);
     }
@@ -366,7 +486,10 @@
       background-image: url(assets/img/csm_Implants_hand_HBS2_1920x_495px_54a3a88a82.jpg);
     }
 
-
+ /* modal linea6*/
+ #exampleModalco1 .modal-co1 {
+  background-image: url(assets/img/contenedor_hermannmuller.jpg);
+}
 
      .modal-producto {
       background-repeat: no-repeat;
