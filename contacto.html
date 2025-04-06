@@ -5,144 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./estilos.css">
-
-    <!--  font awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/94c1e46ce4.js" crossorigin="anonymous"></script>
-
-<!--  tipografia -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-<!--  bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link tipografia -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link meta -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+<!-- link bootstrap js-->   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--  nav -->
+<nav id="menu">
+    <ul class="categorias">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="creative.html">Creative</a></li>
+        <li><a href="legal.html">Legal</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
 
-<script src="prueba2.js">  </script>
 
+<!--  header -->
+<header>
+</header>
 
-    <nav id="barranavegacion">
-        <div>
-            <ul class="menu">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-color-banner.svg" alt="" width="auto" height="30px">
-                  </a>
-                <li class="menu__item">
-                    <a class="nav-link active" href="index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="nav-link active" href="equipo.html">Equipo Médico</a>
-                </li>
-                <li class="menu__item">
-                    <a class="nav-link active" href="contacto.html">Contacto</a>
-                </li>
-                <li class="menu__item">
-                    <button class="btn"> Reservar cita</button>
-                </li>
-        </ul>
-        </div>
-    </nav>
-
+<!--  main -->
 <main>
 
-<section id="formulario">
-    <div class="contenedor--formulario col-12 col-md-10  ajuste--margen">
-        <h2>Formulario de Contacto</h2>
-        <div class="casilla">
-            <label for="inputnombre" class="form-label texto">Nombre</label>
-            <input type="nombre" name="nombre"  class="form-control" id="inputnombre" placeholder="Nombre y apellido">
-        </div>
-    
-        <div class="casilla">
-            <label for="inputtelefono" class="form-label">Correo</label>
-            <input type="telefono" name="phone" class="form-control" id="inputtelefono" placeholder="mail@mail.com">
-        </div>
-
-        <div class="casilla">
-            <label for="inputmail" class="form-label">Asunto</label>
-            <input type="mail" name="mail"   class="form-control" id="inputmail" placeholder="asunto">
-        </div>
-
-        <div class="casilla">
-            <label for="inputmail" class="form-label">Mensaje</label>
-            <input type="mail" name="mail"   class="form-control" id="inputmail" placeholder="mensaje">
-        </div>
-      
-        <div class="casilla">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Confirmar datos
-              </label>
-            </div>
-        </div>
-    
-          <footer >
-            <div class="btn-enviar">
-              <button type="submit" target="_blank" class="botonenviar">Enviar</button>
-            </div>
-            </footer>
-
-        </div>
-    </section>
 
 
-<section>
-    <article id="mapa">
-        <div class="contenedor--mapa ">
-            <div class="col-12 col-md-6  ajuste--margen">
-            <div class="contenedor--mapa__imagen "> 
-                <div class="imagenmapa"> 
-                </div>
-            </div>
-        </div>
-            <div class="col-12 col-md-6  ajuste--margen"> 
-            <div class="contenedor--mapa__textos ">
-                <h2>Ubicación</h2>
-                <h3 class="frase">Av. Irarrazaval #1500</h3>
-                <h3 class="frase">Ñuñoa</h3>
-                <h3 class="frase">contacto@clinica.com</h3>
-                <h3 class="frase">56223342158</h3>            
-            </div>
-        </div>
-        </div>
+    </h1>
 
-    </article>
+<section id="hola">
 </section>
 
 
-    
+
 </main>
 
+<!--  footer -->
 <footer id="piedepagina">
-    <div class="piedepagina__menu"> 
-        
-        <div class="piedepagina__frase">
-            <ul>
-                <li> <i class=" fa-solid fa-location-dot"></i>Av. Irarrazaval #1500</li>
-                <li>Ñuñoa, Santiago</li>
-            </ul>
-        </div>
 
-        <div class="piedepagina__frase">
-            <ul>
-                <li> <i class=" fa-regular fa-envelope"></i>contacto@clinica.com</li>
-                <li>56223342158</li>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </ul>
-        </div>
-
-    </div>
 </footer>
     
 </body>

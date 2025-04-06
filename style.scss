@@ -1,8 +1,12 @@
-@import './modulos/base';
-@import './componentes/barranavegacion';
-@import './componentes/footer';
-@import './componentes/index';
-@import './componentes/lineas';
-@import './componentes/ventas';
+@use './modulos/base';
+@use './componentes/barranavegacion';
+@use './componentes/paginainicio';
+@use './componentes/paginamarketing';
+@use './componentes/contacto';
+@use './componentes/footer';
+
+
+
+
 
 

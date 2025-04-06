@@ -1,258 +1,318 @@
-@use '../modulos/variables' as * ;
-body {
-  background-color: $colorfondo2;
-}
-// header
+@use '../modulos/variables' as *; 
 
-#header{
-    margin: $margin0;
+
+#presentacion{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    background-color:$colorfondo;
     justify-content: center;
-}
-
- .card--header__item{
-    margin: $margin;
-    width: $width;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    background-color: cornsilk;
-    border-radius: $border-radius;
-}
 
- .card--header__imagen{
-    border-radius: $border-radius;
-    overflow: hidden;
-    width: 450px;
-    background-color: none;
-    box-shadow: $box-shadow;
-}
-
- .imagen{
-    background-image: url(./assets/img/trabajadores-salud-hispanos-masculinos-femeninos-discutiendo-informes-mientras-caminan-pasillo-hospital-c2e12063.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 30rem;
-}
-
- .card--header__textos{
-    margin: $margin0;
-    display: flex;
-    background-color: none;
-    height: 23rem;
-}
-
-#header .frase{
-    width: 400px;
-    padding: 20px;
-    font-size: 36px;
-}
-@media screen and (max-width:550px) { #header .card--header__item , .card--header__textos ,
-    #presentacion .contenedor--presentacion {
-width: 90%; align-items:center; 
-}
-}
-@media screen and (max-width:550px) { #header .card--header__textos  h1 {
-width: 95%; align-items: center; font-size: 28px; 
-}
-}
-
-//seccion mision vision
-
-#misionvision{
-    display: flex;
-    flex-wrap: wrap;
-    background-color:$colorfondo3;
-    justify-content: center;
+    .contenedor {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
-
-.mision--vision{
-    width: $width;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-&__item {
-    margin: $margin;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 8rem;
-    text-align: left;
-    padding: 20px;
-    background-color: $colorprincipal;
-    border-radius: 12px;
-    color: $colortexto2;
-    box-shadow: $box-shadow;
-    }
-
-&__item h4 {
-    margin: $margin0;       
-    }  
-}
-
-@media screen and (max-width:550px) { #misionvision .mision--vision__item , #servicios .card--servicio__item , #testimonios .card--testimonio__item  
-    {
-width: 95%; align-items: center;
-}
-}
-
-//seccion servicios
-
-#servicios {
-    display: flex;
-    flex-wrap: wrap;
-    background-color:$colorfondo2;
-    justify-content: center;
-    }
-
-.titulo{
-    margin: $margin0;
-    width: $width;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    }
-
-@media screen and (max-width:550px) { #servicios .titulo , #testimonios .titulo , #equipo .titulo  {
-    justify-content: center;}
-    }    
-
-.card--servicio{
-    width: $width;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-&__item{
-    width: 280px;
-    height: auto;
-    background-color:$colorcard;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 12px;
-    margin: 40px 0;
-    box-shadow: $box-shadow;
-    transition: all 0.3s;
-    overflow: hidden;
-    }
-    
-  &__imagen{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 14rem;
-    display: block;
-    flex-grow: 1;
-    }
-      
-&__texto {
-    margin: $margin0;
-    display: flex;
-    flex-direction: column;
-    height: 12rem;
-    text-align: left;
-    padding: 15px;
-    }
-    
-&__texto h5{
-    font-weight: 700;
-    } 
  }
+   
+#presentacion .foto-inicio{
+    background-image: url(img/BNclose-hands-using-smart-phone-course-deadline-businesswoman-texting-late-night-while-working-important-project-using-smartphone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    background-attachment: fixed;
 
-.foto1{
-    background-image: url(./assets/img/istockphoto-1344792109-612x612.jpg)
+}
+
+
+
+    .contenedor_texto {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        z-index: 1;
     }
-.foto2{
-    background-image: url(./assets/img/images.jpg);
+    .contenedor_texto h1 {
+        margin-right: 20px;
+        font-size: 6rem;
+        color: white;
     }
-.foto3{
-    background-image: url(./assets/img/images-1.jpg);
+    span{
+        color:$color2;
+    }
+    .barra__escritura {
+        width: 3px;
+        height: 70px;
+        margin-left: 5px;
+        background-color: white;
+        transform: rotateZ(10deg);
+        animation: barra-animacion 1s ease infinite;
+    }
+    .contenedor__texto__animacion {
+        display: flex;
+        color: white;
+        font-size: 3rem;
+    }
+ 
+
+    @keyframes color {
+        0% {
+            background-color: #232323;
+        }
+
+        25% {
+            background-color: #2c2c2c;
+        }
+        50% {
+            background-color: #373737;
+        }
+        75% {
+            background-color: #484848;
+        }
+        100% {
+            background-color: #656565;
+        }
+
     }
 
-@media screen and (max-width:550px) { #servicios .card--servicio__item  , #testimonios .card--testimonio__item .card--testimonio__imagen, #equipo .card--medico__item .card--medico__imagen {
-            width: 400px; align-items: center; 
+    // menu
+
+    #barra{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: color 4s infinite;
+    }
+
+        #barra .contenedor-card{
+            width: $width;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 100px 0;
+        }
+
+      #barra  .card-servicios{
+            height: auto;
+            background-color: snow;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 12px;
+            border: 3px solid  white;
+            background-color: transparent;
+            box-shadow:$shadow;
+            transition: all 0.3s;
+            overflow: hidden;
+
+            animation-duration: 3s;
+       animation-iteration-count: infinite;
+        }
+        .margen{
+            padding: 20px;
+        }
+      
+   
+    
+    #barra .contenedor-texto {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 16rem;
+        padding: 20px;
+        transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
+
+        }
+         
+    #barra .contenedor-texto h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 10px 0;
+        color: $color2;
+        transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
+
+        }
+    #barra  h5 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        animation-delay: 3s;
+
+        transition-timing-function:  cubic-bezier(.17,.67,.83,.67);
+
+        }
+            
+    #barra  .card-servicios:hover{
+            transform: scale(1.02);
+            box-shadow: $shadow2;
             }
+
+
+     #barra .icono {
+        display: flex;
+        justify-content: center;
+       font-size: 2.2rem;
+       padding: 10px;
+       padding-top: 15px;
+       color: white;
+       text-decoration: none;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+
+     }
+      
+  
+
+
+            section .animate{
+                opacity: 0;
+                filter: blur(9px);
+                transition: 2s;
+                transform: scale(.5);
             }
+            
+            section.show-animate .animate{
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+            }
+            
 
-// seccion testimonios    
-
-#testimonios {
-    display: flex;
-    flex-wrap: wrap;
-    background-color:$colorfondo2;
-    justify-content: center;
-    }
-
-.card--testimonio{
-    width: $width;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     
 
-&__item{
-    width: 210px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: hidden;
+    // servicios cards grandes
+
+    #service{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: color 4s infinite;
+    }
+
+     
+   
+  #service  .card-servicios{
+        width: $width;
+        background-color: snow;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 12px;
+        box-shadow:$shadow;
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+    .margen{
+        padding:50px 20px;
+    }
+  
+#service .contenedor-imagen .foto1{
+    background-image: url(img/istockphoto-2165505447-1024x1024.jpg);    
 }
- 
-&__imagen{
+#service .contenedor-imagen .foto2{
+    background-image: url(img/istockphoto-694960328-1024x1024.jpg);    
+}
+#service .contenedor-imagen .foto3{
+    background-image: url(img/istockphoto-1019702098-1024x1024.jpg);    
+}
+#service .contenedor-imagen .foto4{
+    background-image: url(img/istockphoto-1759364452-1024x1024.jpg);    
+}
+#service  .contenedor-imagen{
+    display: flex;
+    align-items: center;
+    }
+#service .imagen{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 210px;
-    height: 210px;
-    display: block;
+    height: 24rem;
     flex-grow: 1;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    }
-      
-&__texto {
-    margin: $margin0;
+    background-clip: content-box;
+    transition: 500ms; 
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    #service .imagen h3{
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 10px 0;
+        color: $color2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+
+#service .imagen:hover{
+    scale: 110%;
+    }
+#service .contenedor-texto {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 12rem;
-    text-align: center;
-    padding: 15px;
-    background-color:$colorcard;
-    box-shadow:$box-shadow;
-    border-radius: 15px;
-    margin-bottom: 80px;
+    width: 460px;
+    height: 24rem;
+    padding: 20px;
     }
-
-&__texto h6 {
-    font-style: italic;
+     
+#service .contenedor-texto h3{
+    font-size: 2rem;
     font-weight: 700;
+    padding: 10px 0;
+    color: $color2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     }
-}
+#service  h5 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    }
 
-#testimonios .foto1{
-    background-image: url(./assets/img/download-1.jpg);
-    }
-#testimonios .foto2{
-    background-image: url(./assets/img/retratos-personas-mayores-ancianos-vejez-retrato-luz-natural3-734x489.jpg);
-    }
-#testimonios .foto3{
-    background-image: url(./assets/img/download.jpg);
-    }
-#testimonios  .foto4{
-    background-image: url(./assets/img/premium_photo-1677671874390-7719133c82b4.jpg);
-    }   
+    #service  h6 {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        }
+        
+#service  .card-servicios:hover{
+        transform: scale(1.02);
+        box-shadow: $shadow2;
+        }
+
+#service .icono{
+    display: flex;
+    justify-content: center;
+   font-size: 2rem;
+   padding-top: 30px;
+   color: black;
+   text-decoration: none;
+}
+    
+
+
+
+
+
+
+    
+
+  
